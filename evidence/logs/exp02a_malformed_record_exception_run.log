@@ -1,0 +1,81 @@
+=== EXP 02a | mode=MALFORMED_RECORD_EXCEPTION | input=/data/malformed/nasa_access_malformed.log | out=/results/exp02a_malformed_fail | extra: -Dmapreduce.map.maxattempts=2 ===
+2026-10-30 08:11:28,550 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at localhost/127.0.0.1:8032
+2026-10-30 08:11:30,481 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/root/.staging/job_1793346852065_0002
+2026-10-30 08:11:32,484 INFO input.FileInputFormat: Total input files to process : 1
+2026-10-30 08:11:33,631 INFO mapreduce.JobSubmitter: number of splits:12
+2026-10-30 08:11:35,095 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1793346852065_0002
+2026-10-30 08:11:35,096 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2026-10-30 08:11:35,931 INFO conf.Configuration: resource-types.xml not found
+2026-10-30 08:11:35,932 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2026-10-30 08:11:36,328 INFO impl.YarnClientImpl: Submitted application application_1793346852065_0002
+2026-10-30 08:11:36,460 INFO mapreduce.Job: The url to track the job: http://Sahas.localdomain:8088/proxy/application_1793346852065_0002/
+2026-10-30 08:11:36,467 INFO mapreduce.Job: Running job: job_1793346852065_0002
+2026-10-30 08:12:03,047 INFO mapreduce.Job: Job job_1793346852065_0002 running in uber mode : false
+2026-10-30 08:12:03,120 INFO mapreduce.Job:  map 0% reduce 0%
+2026-10-30 08:12:34,650 INFO mapreduce.Job: Task Id : attempt_1793346852065_0002_m_000000_0, Status : FAILED
+Error: java.io.IOException: CE06 simulated failure: mode=MALFORMED_RECORD_EXCEPTION attempt=attempt_1793346852065_0002_m_000000_0 record=CE06_BAD_RECORD this line is not a valid log entry at all
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:124)
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:75)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:439)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1953)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:172)
+
+2026-10-30 08:12:35,024 INFO mapreduce.Job: Task Id : attempt_1793346852065_0002_m_000001_0, Status : FAILED
+Error: java.io.IOException: CE06 simulated failure: mode=MALFORMED_RECORD_EXCEPTION attempt=attempt_1793346852065_0002_m_000001_0 record=CE06_BAD_RECORD host=="?" [====] "????" xx yy zz EXTRA
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:124)
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:75)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:439)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1953)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:172)
+
+2026-10-30 08:12:36,096 INFO mapreduce.Job: Task Id : attempt_1793346852065_0002_m_000002_0, Status : FAILED
+Error: java.io.IOException: CE06 simulated failure: mode=MALFORMED_RECORD_EXCEPTION attempt=attempt_1793346852065_0002_m_000002_0 record=CE06_BAD_RECORD
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:124)
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:75)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:439)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1953)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:172)
+
+2026-10-30 08:13:01,377 INFO mapreduce.Job:  map 83% reduce 100%
+2026-10-30 08:13:02,699 INFO mapreduce.Job:  map 100% reduce 100%
+2026-10-30 08:13:04,825 INFO mapreduce.Job: Job job_1793346852065_0002 failed with state FAILED due to: Task failed task_1793346852065_0002_m_000000
+Job failed as tasks failed. failedMaps:1 failedReduces:0 killedMaps:0 killedReduces: 0
+
+2026-10-30 08:13:06,062 INFO mapreduce.Job: Counters: 14
+	Job Counters 
+		Failed map tasks=4
+		Killed map tasks=11
+		Killed reduce tasks=1
+		Launched map tasks=6
+		Other local map tasks=3
+		Data-local map tasks=3
+		Total time spent by all maps in occupied slots (ms)=631244
+		Total time spent by all reduces in occupied slots (ms)=0
+		Total time spent by all map tasks (ms)=157811
+		Total vcore-milliseconds taken by all map tasks=157811
+		Total megabyte-milliseconds taken by all map tasks=80799232
+	Map-Reduce Framework
+		CPU time spent (ms)=0
+		Physical memory (bytes) snapshot=0
+		Virtual memory (bytes) snapshot=0
+CE06-EFFECTIVE-CONF mapreduce.map.maxattempts=2 mapreduce.map.speculative=true mapreduce.reduce.speculative=false mapreduce.framework.name=yarn
+CE06 COUNTERS mode=MALFORMED_RECORD_EXCEPTION job=job_1793346852065_0002 LINES_READ=0 MALFORMED_MARKER_ENCOUNTERED=0 BAD_LINE_SKIPPED=0 BAD_LINE_SKIPPED_ON_RETRY=0 UNPARSEABLE_SKIPPED=0 ALWAYS_FAIL_ATTEMPT_THROWN=0 SUCCESS=false
+=== EXIT=1 DURATION=105s ===
+JOBID=job_1793346852065_0002 APPID=application_1793346852065_0002
+Evidence written: /mnt/d/sem7/BDA-assignment/CE06_Hadoop_Practical/evidence/job_history/exp02a_*_job_1793346852065_0002.*
+RESULT=FAILED EXP=02a JOBID=job_1793346852065_0002

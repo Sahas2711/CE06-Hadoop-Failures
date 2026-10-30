@@ -1,0 +1,16 @@
+=== RECOVERY + EXP5v2 Fri Oct 30 09:12:19 UTC 2026 ===
+NodeManager down -> starting detached (setsid --fork yarn --daemon start)
+Node state: Sahas.localdomain:35503 after 6s
+Sahas.localdomain:35503	        RUNNING	Sahas.localdomain:8042	                           1
+Sahas.localdomain:38791	       SHUTDOWN	Sahas.localdomain:8042	                           0
+Sahas.localdomain:46549	       SHUTDOWN	Sahas.localdomain:8042	                           0
+Waiting for application_1793346852065_0010 (exp4v2)...
+  ACCEPTED UNDEFINED 0.0 09:12:31
+  RUNNING UNDEFINED 5.0 09:12:46
+  RUNNING UNDEFINED 20.221012 09:13:01
+  RUNNING UNDEFINED 35.568462 09:13:17
+  RUNNING UNDEFINED 55.800323 09:13:32
+  RUNNING UNDEFINED 61.15231 09:13:48
+  RUNNING UNDEFINED 61.39516 09:14:03
+  RUNNING UNDEFINED 61.741673 09:14:18
+  RUNNING UNDEFINED 61.980335 09:14:33

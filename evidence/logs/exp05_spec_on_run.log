@@ -1,0 +1,14 @@
+=== EXP05 (spec ON) resumed evidence capture Fri Oct 30 08:32:23 UTC 2026 ===
+Waiting for application_1793346852065_0007 to finish...
+  FINISHED SUCCEEDED 08:32:24
+Final: FINISHED SUCCEEDED
+--- task attempts per task (key evidence: 000000 has 2 attempts?) ---
+--- output sample ---
+200	3100521
+302	73070
+304	266773
+403	224
+404	20871
+500	65
+501	41
+RESULT=SUCCESS EXP=05 JOBID=job_1793346852065_0007

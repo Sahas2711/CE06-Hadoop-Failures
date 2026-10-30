@@ -1,0 +1,271 @@
+=== EXP 02b | mode=FAIL_ONCE | input=/data/malformed/nasa_access_malformed.log | out=/results/exp02b_fail_once | extra:  ===
+2026-10-30 08:14:05,253 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at localhost/127.0.0.1:8032
+2026-10-30 08:14:07,515 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/root/.staging/job_1793346852065_0003
+2026-10-30 08:14:09,468 INFO input.FileInputFormat: Total input files to process : 1
+2026-10-30 08:14:10,270 INFO mapreduce.JobSubmitter: number of splits:12
+2026-10-30 08:14:11,099 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1793346852065_0003
+2026-10-30 08:14:11,099 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2026-10-30 08:14:11,920 INFO conf.Configuration: resource-types.xml not found
+2026-10-30 08:14:11,920 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2026-10-30 08:14:12,911 INFO impl.YarnClientImpl: Submitted application application_1793346852065_0003
+2026-10-30 08:14:13,052 INFO mapreduce.Job: The url to track the job: http://Sahas.localdomain:8088/proxy/application_1793346852065_0003/
+2026-10-30 08:14:13,055 INFO mapreduce.Job: Running job: job_1793346852065_0003
+2026-10-30 08:14:45,113 INFO mapreduce.Job: Job job_1793346852065_0003 running in uber mode : false
+2026-10-30 08:14:45,155 INFO mapreduce.Job:  map 0% reduce 0%
+2026-10-30 08:15:30,676 INFO mapreduce.Job:  map 3% reduce 0%
+2026-10-30 08:15:31,520 INFO mapreduce.Job: Task Id : attempt_1793346852065_0003_m_000000_0, Status : FAILED
+Error: java.io.IOException: CE06 simulated failure: mode=FAIL_ONCE first attempt attempt=attempt_1793346852065_0003_m_000000_0 record=CE06_BAD_RECORD this line is not a valid log entry at all
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:131)
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:75)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:439)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1953)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:172)
+
+2026-10-30 08:15:31,837 INFO mapreduce.Job: Task Id : attempt_1793346852065_0003_m_000001_0, Status : FAILED
+Error: java.io.IOException: CE06 simulated failure: mode=FAIL_ONCE first attempt attempt=attempt_1793346852065_0003_m_000001_0 record=CE06_BAD_RECORD host=="?" [====] "????" xx yy zz EXTRA
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:131)
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:75)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:439)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1953)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:172)
+
+2026-10-30 08:15:33,031 INFO mapreduce.Job: Task Id : attempt_1793346852065_0003_m_000002_0, Status : FAILED
+Error: java.io.IOException: CE06 simulated failure: mode=FAIL_ONCE first attempt attempt=attempt_1793346852065_0003_m_000002_0 record=CE06_BAD_RECORD
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:131)
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:75)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:439)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1953)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:172)
+
+2026-10-30 08:15:34,087 INFO mapreduce.Job:  map 0% reduce 0%
+2026-10-30 08:16:11,239 INFO mapreduce.Job:  map 9% reduce 0%
+2026-10-30 08:16:12,278 INFO mapreduce.Job:  map 12% reduce 0%
+2026-10-30 08:16:14,412 INFO mapreduce.Job:  map 20% reduce 0%
+2026-10-30 08:16:16,625 INFO mapreduce.Job:  map 25% reduce 0%
+2026-10-30 08:17:00,317 INFO mapreduce.Job:  map 27% reduce 0%
+2026-10-30 08:17:05,833 INFO mapreduce.Job:  map 25% reduce 0%
+2026-10-30 08:17:06,001 INFO mapreduce.Job: Task Id : attempt_1793346852065_0003_m_000003_0, Status : FAILED
+Error: java.io.IOException: CE06 simulated failure: mode=FAIL_ONCE first attempt attempt=attempt_1793346852065_0003_m_000003_0 record=CE06_BAD_RECORD this line is not a valid log entry at all
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:131)
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:75)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:439)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1953)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:172)
+
+2026-10-30 08:17:06,220 INFO mapreduce.Job: Task Id : attempt_1793346852065_0003_m_000005_0, Status : FAILED
+Error: java.io.IOException: CE06 simulated failure: mode=FAIL_ONCE first attempt attempt=attempt_1793346852065_0003_m_000005_0 record=CE06_BAD_RECORD
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:131)
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:75)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:439)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1953)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:172)
+
+2026-10-30 08:17:07,258 INFO mapreduce.Job:  map 27% reduce 0%
+2026-10-30 08:17:08,346 INFO mapreduce.Job: Task Id : attempt_1793346852065_0003_m_000004_0, Status : FAILED
+Error: java.io.IOException: CE06 simulated failure: mode=FAIL_ONCE first attempt attempt=attempt_1793346852065_0003_m_000004_0 record=CE06_BAD_RECORD host=="?" [====] "????" xx yy zz EXTRA
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:131)
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:75)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:439)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1953)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:172)
+
+2026-10-30 08:17:09,386 INFO mapreduce.Job:  map 25% reduce 0%
+2026-10-30 08:17:58,511 INFO mapreduce.Job:  map 29% reduce 0%
+2026-10-30 08:18:04,912 INFO mapreduce.Job:  map 37% reduce 0%
+2026-10-30 08:18:10,188 INFO mapreduce.Job:  map 45% reduce 0%
+2026-10-30 08:18:11,249 INFO mapreduce.Job:  map 50% reduce 0%
+2026-10-30 08:18:56,662 INFO mapreduce.Job: Task Id : attempt_1793346852065_0003_m_000006_0, Status : FAILED
+Error: java.io.IOException: CE06 simulated failure: mode=FAIL_ONCE first attempt attempt=attempt_1793346852065_0003_m_000006_0 record=CE06_BAD_RECORD this line is not a valid log entry at all
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:131)
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:75)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:439)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1953)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:172)
+
+2026-10-30 08:18:58,830 INFO mapreduce.Job:  map 50% reduce 17%
+2026-10-30 08:18:59,861 INFO mapreduce.Job:  map 52% reduce 17%
+2026-10-30 08:18:59,867 INFO mapreduce.Job: Task Id : attempt_1793346852065_0003_m_000007_0, Status : FAILED
+Error: java.io.IOException: CE06 simulated failure: mode=FAIL_ONCE first attempt attempt=attempt_1793346852065_0003_m_000007_0 record=CE06_BAD_RECORD host=="?" [====] "????" xx yy zz EXTRA
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:131)
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:75)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:439)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1953)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:172)
+
+2026-10-30 08:19:00,894 INFO mapreduce.Job:  map 50% reduce 17%
+2026-10-30 08:19:34,240 INFO mapreduce.Job:  map 56% reduce 17%
+2026-10-30 08:19:35,354 INFO mapreduce.Job:  map 64% reduce 17%
+2026-10-30 08:19:36,386 INFO mapreduce.Job:  map 67% reduce 17%
+2026-10-30 08:19:42,614 INFO mapreduce.Job:  map 67% reduce 22%
+2026-10-30 08:20:16,174 INFO mapreduce.Job: Task Id : attempt_1793346852065_0003_m_000008_0, Status : FAILED
+Error: java.io.IOException: CE06 simulated failure: mode=FAIL_ONCE first attempt attempt=attempt_1793346852065_0003_m_000008_0 record=CE06_BAD_RECORD
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:131)
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:75)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:439)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1953)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:172)
+
+2026-10-30 08:20:19,327 INFO mapreduce.Job:  map 72% reduce 22%
+2026-10-30 08:20:21,439 INFO mapreduce.Job:  map 75% reduce 22%
+2026-10-30 08:20:27,752 INFO mapreduce.Job:  map 75% reduce 25%
+2026-10-30 08:20:45,553 INFO mapreduce.Job: Task Id : attempt_1793346852065_0003_m_000010_0, Status : FAILED
+Error: java.io.IOException: CE06 simulated failure: mode=FAIL_ONCE first attempt attempt=attempt_1793346852065_0003_m_000010_0 record=CE06_BAD_RECORD host=="?" [====] "????" xx yy zz EXTRA
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:131)
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:75)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:439)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1953)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:172)
+
+2026-10-30 08:20:50,699 INFO mapreduce.Job:  map 83% reduce 25%
+2026-10-30 08:20:51,733 INFO mapreduce.Job:  map 83% reduce 28%
+2026-10-30 08:21:07,133 INFO mapreduce.Job: Task Id : attempt_1793346852065_0003_m_000011_0, Status : FAILED
+Error: java.io.IOException: CE06 simulated failure: mode=FAIL_ONCE first attempt attempt=attempt_1793346852065_0003_m_000011_0 record=CE06_BAD_RECORD
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:131)
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:75)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:439)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1953)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:172)
+
+2026-10-30 08:21:11,255 INFO mapreduce.Job:  map 92% reduce 28%
+2026-10-30 08:21:16,339 INFO mapreduce.Job:  map 92% reduce 31%
+2026-10-30 08:21:20,401 INFO mapreduce.Job:  map 100% reduce 31%
+2026-10-30 08:21:22,427 INFO mapreduce.Job:  map 100% reduce 38%
+2026-10-30 08:21:28,514 INFO mapreduce.Job:  map 100% reduce 100%
+2026-10-30 08:21:30,558 INFO mapreduce.Job: Job job_1793346852065_0003 completed successfully
+2026-10-30 08:21:32,185 INFO mapreduce.Job: Counters: 61
+	File System Counters
+		FILE: Number of bytes read=34615656
+		FILE: Number of bytes written=73282918
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=376560554
+		HDFS: Number of bytes written=65
+		HDFS: Number of read operations=41
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Failed map tasks=11
+		Killed map tasks=1
+		Launched map tasks=24
+		Launched reduce tasks=1
+		Other local map tasks=12
+		Data-local map tasks=12
+		Total time spent by all maps in occupied slots (ms)=3638292
+		Total time spent by all reduces in occupied slots (ms)=769592
+		Total time spent by all map tasks (ms)=909573
+		Total time spent by all reduce tasks (ms)=192398
+		Total vcore-milliseconds taken by all map tasks=909573
+		Total vcore-milliseconds taken by all reduce tasks=192398
+		Total megabyte-milliseconds taken by all map tasks=465701376
+		Total megabyte-milliseconds taken by all reduce tasks=98507776
+	Map-Reduce Framework
+		Map input records=6923150
+		Map output records=3461565
+		Map output bytes=27692520
+		Map output materialized bytes=34615722
+		Input split bytes=1524
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=7
+		Reduce shuffle bytes=34615722
+		Reduce input records=3461565
+		Reduce output records=7
+		Spilled Records=6923130
+		Shuffled Maps =12
+		Failed Shuffles=0
+		Merged Map outputs=12
+		GC time elapsed (ms)=6678
+		CPU time spent (ms)=376440
+		Physical memory (bytes) snapshot=4262277120
+		Virtual memory (bytes) snapshot=30073823232
+		Total committed heap usage (bytes)=2681208832
+		Peak Map Physical memory (bytes)=357679104
+		Peak Map Virtual memory (bytes)=2315976704
+		Peak Reduce Physical memory (bytes)=292909056
+		Peak Reduce Virtual memory (bytes)=2320433152
+	CE06 Failure Simulation
+		BAD_LINE_SKIPPED_ON_RETRY=12
+		LINES_READ=6923150
+		MALFORMED_MARKER_ENCOUNTERED=12
+		UNPARSEABLE_SKIPPED=3461573
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=376559030
+	File Output Format Counters 
+		Bytes Written=65
+CE06-EFFECTIVE-CONF mapreduce.map.maxattempts=4 mapreduce.map.speculative=true mapreduce.reduce.speculative=false mapreduce.framework.name=yarn
+CE06 COUNTERS mode=FAIL_ONCE job=job_1793346852065_0003 LINES_READ=6923150 MALFORMED_MARKER_ENCOUNTERED=12 BAD_LINE_SKIPPED=0 BAD_LINE_SKIPPED_ON_RETRY=12 UNPARSEABLE_SKIPPED=3461573 ALWAYS_FAIL_ATTEMPT_THROWN=0 SUCCESS=true
+=== EXIT=0 DURATION=457s ===
+JOBID=job_1793346852065_0003 APPID=application_1793346852065_0003
+Evidence written: /mnt/d/sem7/BDA-assignment/CE06_Hadoop_Practical/evidence/job_history/exp02b_*_job_1793346852065_0003.*
+200	3100521
+302	73070
+304	266773
+403	224
+404	20871
+500	65
+501	41
+RESULT=SUCCESS EXP=02b JOBID=job_1793346852065_0003

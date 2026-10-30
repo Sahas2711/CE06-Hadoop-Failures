@@ -1,0 +1,30 @@
+{
+ "jobCounters": {
+  "id": "job_1793346852065_0002",
+  "counterGroup": [
+   {
+    "counterGroupName": "org.apache.hadoop.mapreduce.TaskCounter",
+    "counter": [
+     {
+      "name": "CPU_MILLISECONDS",
+      "totalCounterValue": 0,
+      "mapCounterValue": 0,
+      "reduceCounterValue": 0
+     },
+     {
+      "name": "PHYSICAL_MEMORY_BYTES",
+      "totalCounterValue": 0,
+      "mapCounterValue": 0,
+      "reduceCounterValue": 0
+     },
+     {
+      "name": "VIRTUAL_MEMORY_BYTES",
+      "totalCounterValue": 0,
+      "mapCounterValue": 0,
+      "reduceCounterValue": 0
+     }
+    ]
+   }
+  ]
+ }
+}

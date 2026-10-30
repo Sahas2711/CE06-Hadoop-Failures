@@ -1,0 +1,168 @@
+[
+ {
+  "task": "task_1793346852065_0005_m_000000",
+  "type": "MAP",
+  "taskState": "FAILED",
+  "attempts": [
+   {
+    "id": "attempt_1793346852065_0005_m_000000_0",
+    "state": "FAILED",
+    "elapsed": 10220,
+    "diagnostics": "Error: java.io.IOException: CE06 simulated failure: mode=ALWAYS_FAIL attempt=attempt_1793346852065_0005_m_000000_0 partition=0 (thrown in setup - every attempt fails)\n\tat FailureSimulation$StatusMapper.setup(FailureSimulation.java:100)\n\tat org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:142)\n\tat org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)\n\tat org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)\n\tat org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)\n\tat java.base/java.security.AccessController.doPrivileged(AccessController.java:712)\n\tat java.base/javax.securit"
+   },
+   {
+    "id": "attempt_1793346852065_0005_m_000000_1",
+    "state": "FAILED",
+    "elapsed": 12064,
+    "diagnostics": "Error: java.io.IOException: CE06 simulated failure: mode=ALWAYS_FAIL attempt=attempt_1793346852065_0005_m_000000_1 partition=0 (thrown in setup - every attempt fails)\n\tat FailureSimulation$StatusMapper.setup(FailureSimulation.java:100)\n\tat org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:142)\n\tat org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)\n\tat org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)\n\tat org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)\n\tat java.base/java.security.AccessController.doPrivileged(AccessController.java:712)\n\tat java.base/javax.securit"
+   },
+   {
+    "id": "attempt_1793346852065_0005_m_000000_2",
+    "state": "FAILED",
+    "elapsed": 9351,
+    "diagnostics": "Error: java.io.IOException: CE06 simulated failure: mode=ALWAYS_FAIL attempt=attempt_1793346852065_0005_m_000000_2 partition=0 (thrown in setup - every attempt fails)\n\tat FailureSimulation$StatusMapper.setup(FailureSimulation.java:100)\n\tat org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:142)\n\tat org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)\n\tat org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)\n\tat org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)\n\tat java.base/java.security.AccessController.doPrivileged(AccessController.java:712)\n\tat java.base/javax.securit"
+   },
+   {
+    "id": "attempt_1793346852065_0005_m_000000_3",
+    "state": "FAILED",
+    "elapsed": 5664,
+    "diagnostics": "Error: java.io.IOException: CE06 simulated failure: mode=ALWAYS_FAIL attempt=attempt_1793346852065_0005_m_000000_3 partition=0 (thrown in setup - every attempt fails)\n\tat FailureSimulation$StatusMapper.setup(FailureSimulation.java:100)\n\tat org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:142)\n\tat org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)\n\tat org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)\n\tat org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)\n\tat java.base/java.security.AccessController.doPrivileged(AccessController.java:712)\n\tat java.base/javax.securit"
+   }
+  ]
+ },
+ {
+  "task": "task_1793346852065_0005_m_000001",
+  "type": "MAP",
+  "taskState": "SUCCEEDED",
+  "attempts": [
+   {
+    "id": "attempt_1793346852065_0005_m_000001_0",
+    "state": "SUCCEEDED",
+    "elapsed": 16450,
+    "diagnostics": ""
+   }
+  ]
+ },
+ {
+  "task": "task_1793346852065_0005_m_000002",
+  "type": "MAP",
+  "taskState": "SUCCEEDED",
+  "attempts": [
+   {
+    "id": "attempt_1793346852065_0005_m_000002_0",
+    "state": "SUCCEEDED",
+    "elapsed": 16242,
+    "diagnostics": ""
+   }
+  ]
+ },
+ {
+  "task": "task_1793346852065_0005_m_000003",
+  "type": "MAP",
+  "taskState": "SUCCEEDED",
+  "attempts": [
+   {
+    "id": "attempt_1793346852065_0005_m_000003_0",
+    "state": "SUCCEEDED",
+    "elapsed": 12811,
+    "diagnostics": ""
+   }
+  ]
+ },
+ {
+  "task": "task_1793346852065_0005_m_000004",
+  "type": "MAP",
+  "taskState": "SUCCEEDED",
+  "attempts": [
+   {
+    "id": "attempt_1793346852065_0005_m_000004_0",
+    "state": "SUCCEEDED",
+    "elapsed": 13533,
+    "diagnostics": ""
+   }
+  ]
+ },
+ {
+  "task": "task_1793346852065_0005_m_000005",
+  "type": "MAP",
+  "taskState": "SUCCEEDED",
+  "attempts": [
+   {
+    "id": "attempt_1793346852065_0005_m_000005_0",
+    "state": "SUCCEEDED",
+    "elapsed": 11237,
+    "diagnostics": ""
+   }
+  ]
+ },
+ {
+  "task": "task_1793346852065_0005_m_000006",
+  "type": "MAP",
+  "taskState": "SUCCEEDED",
+  "attempts": [
+   {
+    "id": "attempt_1793346852065_0005_m_000006_0",
+    "state": "SUCCEEDED",
+    "elapsed": 11894,
+    "diagnostics": ""
+   }
+  ]
+ },
+ {
+  "task": "task_1793346852065_0005_m_000007",
+  "type": "MAP",
+  "taskState": "SUCCEEDED",
+  "attempts": [
+   {
+    "id": "attempt_1793346852065_0005_m_000007_0",
+    "state": "SUCCEEDED",
+    "elapsed": 7269,
+    "diagnostics": ""
+   }
+  ]
+ },
+ {
+  "task": "task_1793346852065_0005_m_000008",
+  "type": "MAP",
+  "taskState": "FAILED",
+  "attempts": [
+   {
+    "id": "attempt_1793346852065_0005_m_000008_0",
+    "state": "KILLED",
+    "elapsed": 836,
+    "diagnostics": "Task KILL is received. Killing attempt!"
+   }
+  ]
+ },
+ {
+  "task": "task_1793346852065_0005_m_000009",
+  "type": "MAP",
+  "taskState": "FAILED",
+  "attempts": []
+ },
+ {
+  "task": "task_1793346852065_0005_m_000010",
+  "type": "MAP",
+  "taskState": "FAILED",
+  "attempts": []
+ },
+ {
+  "task": "task_1793346852065_0005_m_000011",
+  "type": "MAP",
+  "taskState": "FAILED",
+  "attempts": []
+ },
+ {
+  "task": "task_1793346852065_0005_r_000000",
+  "type": "REDUCE",
+  "taskState": "FAILED",
+  "attempts": [
+   {
+    "id": "attempt_1793346852065_0005_r_000000_0",
+    "state": "KILLED",
+    "elapsed": 13870,
+    "diagnostics": "Task KILL is received. Killing attempt!"
+   }
+  ]
+ }
+]

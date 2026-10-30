@@ -1,0 +1,15 @@
+Baseline exp01 vs others:
+  IDENTICAL: /results/exp02b_fail_once == /results/exp01_baseline
+  IDENTICAL: /results/exp04_spec_off == /results/exp01_baseline
+  IDENTICAL: /results/exp05_spec_on == /results/exp01_baseline
+  IDENTICAL: /results/exp06_kill_attempt == /results/exp01_baseline
+  IDENTICAL: /results/exp07_nodemanager_failure == /results/exp01_baseline
+
+Baseline content:
+200	3100521
+302	73070
+304	266773
+403	224
+404	20871
+500	65
+501	41

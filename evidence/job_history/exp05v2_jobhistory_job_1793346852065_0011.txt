@@ -1,0 +1,40 @@
+########## JOB HISTORY EVIDENCE: job_1793346852065_0011 (exp 05v2) ##########
+2026-10-30 09:18:09,451 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at localhost/127.0.0.1:8032
+Exception in thread "main" java.lang.IllegalArgumentException: JobId string : /results/exp05_spec_on is not properly formed
+	at org.apache.hadoop.mapreduce.JobID.forName(JobID.java:156)
+	at org.apache.hadoop.mapreduce.tools.CLI.run(CLI.java:401)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:82)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:97)
+	at org.apache.hadoop.mapred.JobClient.main(JobClient.java:1276)
+----- yarn application -status -----
+2026-10-30 09:18:11,649 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at localhost/127.0.0.1:8032
+2026-10-30 09:18:11,996 INFO conf.Configuration: resource-types.xml not found
+2026-10-30 09:18:11,997 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+Application Report : 
+	Application-Id : application_1793346852065_0011
+	Application-Name : CE06-SLOW_TASK-1793351816193
+	Application-Type : MAPREDUCE
+	User : root
+	Queue : root.default
+	Application Priority : 0
+	Start-Time : 1793351818624
+	Finish-Time : 1793351882770
+	Progress : 100%
+	State : FINISHED
+	Final-State : SUCCEEDED
+	Tracking-URL : http://Sahas.localdomain:19888/jobhistory/job/job_1793346852065_0011
+	RPC Port : 36631
+	AM Host : Sahas.localdomain
+	Aggregate Resource Allocation : 117153 MB-seconds, 221 vcore-seconds
+	Aggregate Resource Preempted : 0 MB-seconds, 0 vcore-seconds
+	Log Aggregation Status : SUCCEEDED
+	Diagnostics : 
+	Unmanaged Application : false
+	Application Node Label Expression : <Not set>
+	AM container Node Label Expression : <DEFAULT_PARTITION>
+	TimeoutType : LIFETIME	ExpiryTime : UNLIMITED	RemainingTime : -1seconds
+
+----- CE06 counters (mapred job -counter) -----
+Usage: job [-counter <job-id> <group-name> <counter-name>]
+----- task completion events (mapred job -events? fallback: history via REST) -----
+{"job":{"submitTime":1793351818591,"startTime":1793351824487,"finishTime":1793351881999,"id":"job_1793346852065_0011","name":"CE06-SLOW_TASK-1793351816193","queue":"root.default","user":"root","state":"SUCCEEDED","mapsTotal":12,"mapsCompleted":12,"reducesTotal":1,"reducesCompleted":1,"uberized":false,"diagnostics":"","avgMapTime":4725,"avgReduceTime":2141,"avgShuffleTime":33046,"avgMergeTime":1601,"failedReduceAttempts":0,"killedReduceAttempts":0,"successfulReduceAttempts":1,"failedMapAttempts":0,"killedMapAttempts":1,"successfulMapAttempts":12}}

@@ -1,0 +1,143 @@
+2026-10-30 08:12:32,196 INFO [main] org.apache.hadoop.mapred.MapTask: Finished spill 0
+2026-10-30 08:12:32,302 WARN [main] org.apache.hadoop.mapred.YarnChild: Exception running child : java.io.IOException: CE06 simulated failure: mode=MALFORMED_RECORD_EXCEPTION attempt=attempt_1793346852065_0002_m_000000_0 record=CE06_BAD_RECORD this line is not a valid log entry at all
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:124)
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:75)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+--
+2026-10-30 08:12:32,332 INFO [main] org.apache.hadoop.mapred.MapTask: Finished spill 0
+2026-10-30 08:12:32,400 WARN [main] org.apache.hadoop.mapred.YarnChild: Exception running child : java.io.IOException: CE06 simulated failure: mode=MALFORMED_RECORD_EXCEPTION attempt=attempt_1793346852065_0002_m_000001_0 record=CE06_BAD_RECORD host=="?" [====] "????" xx yy zz EXTRA
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:124)
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:75)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+--
+2026-10-30 08:12:32,474 INFO [IPC Server handler 1 on default port 36731] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1793346852065_0002_m_000000_0 is : 0.0
+2026-10-30 08:12:32,752 ERROR [IPC Server handler 12 on default port 36731] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Task: attempt_1793346852065_0002_m_000001_0 - exited : java.io.IOException: CE06 simulated failure: mode=MALFORMED_RECORD_EXCEPTION attempt=attempt_1793346852065_0002_m_000001_0 record=CE06_BAD_RECORD host=="?" [====] "????" xx yy zz EXTRA
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:124)
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:75)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+--
+
+2026-10-30 08:12:32,753 ERROR [IPC Server handler 10 on default port 36731] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Task: attempt_1793346852065_0002_m_000000_0 - exited : java.io.IOException: CE06 simulated failure: mode=MALFORMED_RECORD_EXCEPTION attempt=attempt_1793346852065_0002_m_000000_0 record=CE06_BAD_RECORD this line is not a valid log entry at all
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:124)
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:75)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+--
+
+2026-10-30 08:12:32,755 INFO [IPC Server handler 10 on default port 36731] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Diagnostics report from attempt_1793346852065_0002_m_000000_0: Error: java.io.IOException: CE06 simulated failure: mode=MALFORMED_RECORD_EXCEPTION attempt=attempt_1793346852065_0002_m_000000_0 record=CE06_BAD_RECORD this line is not a valid log entry at all
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:124)
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:75)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+--
+
+2026-10-30 08:12:32,756 INFO [IPC Server handler 12 on default port 36731] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Diagnostics report from attempt_1793346852065_0002_m_000001_0: Error: java.io.IOException: CE06 simulated failure: mode=MALFORMED_RECORD_EXCEPTION attempt=attempt_1793346852065_0002_m_000001_0 record=CE06_BAD_RECORD host=="?" [====] "????" xx yy zz EXTRA
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:124)
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:75)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+--
+
+2026-10-30 08:12:32,761 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1793346852065_0002_m_000000_0: Error: java.io.IOException: CE06 simulated failure: mode=MALFORMED_RECORD_EXCEPTION attempt=attempt_1793346852065_0002_m_000000_0 record=CE06_BAD_RECORD this line is not a valid log entry at all
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:124)
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:75)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+--
+
+2026-10-30 08:12:32,762 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1793346852065_0002_m_000001_0: Error: java.io.IOException: CE06 simulated failure: mode=MALFORMED_RECORD_EXCEPTION attempt=attempt_1793346852065_0002_m_000001_0 record=CE06_BAD_RECORD host=="?" [====] "????" xx yy zz EXTRA
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:124)
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:75)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+--
+2026-10-30 08:12:34,351 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Reduce slow start threshold not met. completedMapsForReduceSlowstart 1
+2026-10-30 08:12:34,360 ERROR [IPC Server handler 11 on default port 36731] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Task: attempt_1793346852065_0002_m_000002_0 - exited : java.io.IOException: CE06 simulated failure: mode=MALFORMED_RECORD_EXCEPTION attempt=attempt_1793346852065_0002_m_000002_0 record=CE06_BAD_RECORD
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:124)
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:75)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+--
+
+2026-10-30 08:12:34,362 INFO [IPC Server handler 11 on default port 36731] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Diagnostics report from attempt_1793346852065_0002_m_000002_0: Error: java.io.IOException: CE06 simulated failure: mode=MALFORMED_RECORD_EXCEPTION attempt=attempt_1793346852065_0002_m_000002_0 record=CE06_BAD_RECORD
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:124)
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:75)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+--
+
+2026-10-30 08:12:34,386 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1793346852065_0002_m_000002_0: Error: java.io.IOException: CE06 simulated failure: mode=MALFORMED_RECORD_EXCEPTION attempt=attempt_1793346852065_0002_m_000002_0 record=CE06_BAD_RECORD
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:124)
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:75)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+--
+2026-10-30 08:12:59,410 INFO [IPC Server handler 11 on default port 36731] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1793346852065_0002_m_000000_1 is : 0.0
+2026-10-30 08:12:59,529 ERROR [IPC Server handler 10 on default port 36731] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Task: attempt_1793346852065_0002_m_000000_1 - exited : java.io.IOException: CE06 simulated failure: mode=MALFORMED_RECORD_EXCEPTION attempt=attempt_1793346852065_0002_m_000000_1 record=CE06_BAD_RECORD this line is not a valid log entry at all
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:124)
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:75)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+--
+
+2026-10-30 08:12:59,531 INFO [IPC Server handler 10 on default port 36731] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Diagnostics report from attempt_1793346852065_0002_m_000000_1: Error: java.io.IOException: CE06 simulated failure: mode=MALFORMED_RECORD_EXCEPTION attempt=attempt_1793346852065_0002_m_000000_1 record=CE06_BAD_RECORD this line is not a valid log entry at all
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:124)
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:75)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+--
+
+2026-10-30 08:12:59,533 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1793346852065_0002_m_000000_1: Error: java.io.IOException: CE06 simulated failure: mode=MALFORMED_RECORD_EXCEPTION attempt=attempt_1793346852065_0002_m_000000_1 record=CE06_BAD_RECORD this line is not a valid log entry at all
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:124)
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:75)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+--
+2026-10-30 08:12:33,277 INFO [main] org.apache.hadoop.mapred.MapTask: Finished spill 0
+2026-10-30 08:12:33,368 WARN [main] org.apache.hadoop.mapred.YarnChild: Exception running child : java.io.IOException: CE06 simulated failure: mode=MALFORMED_RECORD_EXCEPTION attempt=attempt_1793346852065_0002_m_000002_0 record=CE06_BAD_RECORD
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:124)
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:75)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+--
+2026-10-30 08:12:59,286 INFO [main] org.apache.hadoop.mapred.MapTask: Finished spill 0
+2026-10-30 08:12:59,351 WARN [main] org.apache.hadoop.mapred.YarnChild: Exception running child : java.io.IOException: CE06 simulated failure: mode=MALFORMED_RECORD_EXCEPTION attempt=attempt_1793346852065_0002_m_000000_1 record=CE06_BAD_RECORD this line is not a valid log entry at all
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:124)
+	at FailureSimulation$StatusMapper.map(FailureSimulation.java:75)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)

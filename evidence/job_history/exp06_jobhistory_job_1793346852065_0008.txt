@@ -1,0 +1,38 @@
+########## JOB HISTORY: job_1793346852065_0008 (exp06 kill attempt) ##########
+2026-10-30 08:41:18,657 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at localhost/127.0.0.1:8032
+Exception in thread "main" java.lang.IllegalArgumentException: JobId string : /results/exp06_kill_attempt is not properly formed
+	at org.apache.hadoop.mapreduce.JobID.forName(JobID.java:156)
+	at org.apache.hadoop.mapreduce.tools.CLI.run(CLI.java:401)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:82)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:97)
+	at org.apache.hadoop.mapred.JobClient.main(JobClient.java:1276)
+----- application status -----
+2026-10-30 08:41:21,503 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at localhost/127.0.0.1:8032
+2026-10-30 08:41:21,924 INFO conf.Configuration: resource-types.xml not found
+2026-10-30 08:41:21,925 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+Application Report : 
+	Application-Id : application_1793346852065_0008
+	Application-Name : CE06-SLOW_TASK-1793349601410
+	Application-Type : MAPREDUCE
+	User : root
+	Queue : root.default
+	Application Priority : 0
+	Start-Time : 1793349606650
+	Finish-Time : 1793349664476
+	Progress : 100%
+	State : FINISHED
+	Final-State : SUCCEEDED
+	Tracking-URL : http://Sahas.localdomain:19888/jobhistory/job/job_1793346852065_0008
+	RPC Port : 43705
+	AM Host : Sahas.localdomain
+	Aggregate Resource Allocation : 100775 MB-seconds, 189 vcore-seconds
+	Aggregate Resource Preempted : 0 MB-seconds, 0 vcore-seconds
+	Log Aggregation Status : SUCCEEDED
+	Diagnostics : 
+	Unmanaged Application : false
+	Application Node Label Expression : <Not set>
+	AM container Node Label Expression : <DEFAULT_PARTITION>
+	TimeoutType : LIFETIME	ExpiryTime : UNLIMITED	RemainingTime : -1seconds
+
+----- Job Counters -----
+Usage: job [-counter <job-id> <group-name> <counter-name>]

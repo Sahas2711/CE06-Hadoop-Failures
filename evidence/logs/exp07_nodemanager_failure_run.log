@@ -1,0 +1,82 @@
+=== EXP 07 | NodeManager failure mid-job | Fri Oct 30 08:42:51 UTC 2026 ===
+Nodes BEFORE:
+Sahas.localdomain:38791	        RUNNING	Sahas.localdomain:8042	                           0
+Job submitted (client log: evidence/logs/exp07_client.log)
+APP=application_1793346852065_0009 JOB=job_1793346852065_0009
+AM / YarnChild processes BEFORE stop:
+18240 org.apache.hadoop.util.RunJar
+18401 org.apache.hadoop.mapreduce.v2.app.MRAppMaster
+2423 org.apache.hadoop.hdfs.server.namenode.NameNode
+2904 org.apache.hadoop.mapreduce.v2.hs.JobHistoryServer
+2792 org.apache.hadoop.yarn.server.resourcemanager.ResourceManager
+2505 org.apache.hadoop.hdfs.server.datanode.DataNode
+18525 jdk.jcmd/sun.tools.jps.Jps
+2909 org.apache.hadoop.yarn.server.nodemanager.NodeManager
+Letting job run 30s before stopping NodeManager...
+  t+5s 5.0%
+  t+10s 12.5%
+  t+15s 12.5%
+  t+20s 20.35443%
+  t+25s 20.536455%
+  t+30s 28.036455%
+>>> yarn --daemon stop nodemanager  (08:43:35)
+Processes AFTER stop:
+18240 org.apache.hadoop.util.RunJar
+2423 org.apache.hadoop.hdfs.server.namenode.NameNode
+2904 org.apache.hadoop.mapreduce.v2.hs.JobHistoryServer
+2792 org.apache.hadoop.yarn.server.resourcemanager.ResourceManager
+2505 org.apache.hadoop.hdfs.server.datanode.DataNode
+19389 jdk.jcmd/sun.tools.jps.Jps
+Nodes AFTER stop:
+Sahas.localdomain:38791	       SHUTDOWN	Sahas.localdomain:8042	                           0
+Observing app state while NodeManager is DOWN...
+  t-down+10s state=ACCEPTED UNDEFINED prog=0.0 08:43:54
+  t-down+20s state=ACCEPTED UNDEFINED prog=0.0 08:44:04
+  t-down+30s state=ACCEPTED UNDEFINED prog=0.0 08:44:14
+  t-down+40s state=ACCEPTED UNDEFINED prog=0.0 08:44:24
+  t-down+50s state=ACCEPTED UNDEFINED prog=0.0 08:44:34
+  t-down+60s state=ACCEPTED UNDEFINED prog=0.0 08:44:44
+Application log tail (AM/RM diagnostics) while down:
+[Fri Oct 30 08:43:36 +0000 2026] Application is added to the scheduler and is not yet activated. Skipping AM assignment as cluster resource is empty.  Details : AM Partition = <DEFAULT_PARTITION>; AM Resource Request = <memory:512, vCores:1>; Queue Resource Limit for AM = <memory:0, vCores:0>; User AM Resource Limit of the queue = <memory:0, vCores:0>; Queue AM Resource Usage = <memory:0, vCores:0>; 
+>>> yarn --daemon start nodemanager  (08:44:44)
+Processes AFTER restart:
+18240 org.apache.hadoop.util.RunJar
+19557 org.apache.hadoop.yarn.server.nodemanager.NodeManager
+19879 jdk.jcmd/sun.tools.jps.Jps
+2423 org.apache.hadoop.hdfs.server.namenode.NameNode
+19768 org.apache.hadoop.mapreduce.v2.app.MRAppMaster
+2904 org.apache.hadoop.mapreduce.v2.hs.JobHistoryServer
+2792 org.apache.hadoop.yarn.server.resourcemanager.ResourceManager
+2505 org.apache.hadoop.hdfs.server.datanode.DataNode
+Nodes AFTER restart:
+Sahas.localdomain:46549	        RUNNING	Sahas.localdomain:8042	                           4
+Sahas.localdomain:38791	       SHUTDOWN	Sahas.localdomain:8042	                           0
+Waiting for final application state...
+  state=RUNNING UNDEFINED 08:44:59
+  state=RUNNING UNDEFINED 08:45:15
+  state=RUNNING UNDEFINED 08:45:30
+  state=RUNNING UNDEFINED 08:45:45
+  state=FINISHED SUCCEEDED 08:46:01
+FINAL: FINISHED SUCCEEDED DURATION=188s
+--- task attempt states (expect extra FAILED attempts from NM loss) ---
+task_1793346852065_0009_m_000010 SUCCEEDED 1000=SUCCEEDED (attempts=1)
+task_1793346852065_0009_m_000011 SUCCEEDED 1000=SUCCEEDED (attempts=1)
+task_1793346852065_0009_m_000002 SUCCEEDED 0=KILLED 1000=SUCCEEDED (attempts=2)
+task_1793346852065_0009_m_000003 SUCCEEDED 0=KILLED 1000=SUCCEEDED (attempts=2)
+task_1793346852065_0009_m_000004 SUCCEEDED 0=KILLED 1000=SUCCEEDED (attempts=2)
+task_1793346852065_0009_m_000005 SUCCEEDED 0=KILLED 1000=SUCCEEDED (attempts=2)
+task_1793346852065_0009_m_000006 SUCCEEDED 0=KILLED 1000=SUCCEEDED (attempts=2)
+task_1793346852065_0009_m_000007 SUCCEEDED 0=KILLED 1000=SUCCEEDED (attempts=2)
+task_1793346852065_0009_m_000008 SUCCEEDED 1000=SUCCEEDED (attempts=1)
+task_1793346852065_0009_m_000009 SUCCEEDED 1000=SUCCEEDED (attempts=1)
+task_1793346852065_0009_m_000000 SUCCEEDED 1000=SUCCEEDED (attempts=1)
+task_1793346852065_0009_m_000001 SUCCEEDED 0=KILLED 1000=SUCCEEDED (attempts=2)
+--- output sample ---
+200	3100521
+302	73070
+304	266773
+403	224
+404	20871
+500	65
+501	41
+RESULT=SUCCESS EXP=07 JOBID=job_1793346852065_0009

@@ -1,0 +1,58 @@
+{
+ "id": "application_1793346852065_0006",
+ "user": "root",
+ "name": "CE06-SLOW_TASK-1793348736289",
+ "queue": "root.default",
+ "state": "FINISHED",
+ "finalStatus": "SUCCEEDED",
+ "progress": 100.0,
+ "trackingUI": "History",
+ "trackingUrl": "http://Sahas.localdomain:8088/proxy/application_1793346852065_0006/",
+ "diagnostics": "",
+ "clusterId": 1793346852065,
+ "applicationType": "MAPREDUCE",
+ "applicationTags": "",
+ "priority": 0,
+ "startedTime": 1793348740781,
+ "launchTime": 1793348741599,
+ "finishedTime": 1793348844472,
+ "elapsedTime": 103691,
+ "amContainerLogs": "http://Sahas.localdomain:8042/node/containerlogs/container_1793346852065_0006_01_000001/root",
+ "amHostHttpAddress": "Sahas.localdomain:8042",
+ "amRPCAddress": "Sahas.localdomain:37405",
+ "masterNodeId": "Sahas.localdomain:38791",
+ "allocatedMB": -1,
+ "allocatedVCores": -1,
+ "reservedMB": -1,
+ "reservedVCores": -1,
+ "runningContainers": -1,
+ "memorySeconds": 183068,
+ "vcoreSeconds": 351,
+ "queueUsagePercentage": 0.0,
+ "clusterUsagePercentage": 0.0,
+ "resourceSecondsMap": {
+  "entry": {
+   "key": "vcores",
+   "value": "351"
+  }
+ },
+ "preemptedResourceMB": 0,
+ "preemptedResourceVCores": 0,
+ "numNonAMContainerPreempted": 0,
+ "numAMContainerPreempted": 0,
+ "preemptedMemorySeconds": 0,
+ "preemptedVcoreSeconds": 0,
+ "preemptedResourceSecondsMap": {},
+ "logAggregationStatus": "SUCCEEDED",
+ "unmanagedApplication": false,
+ "amNodeLabelExpression": "",
+ "timeouts": {
+  "timeout": [
+   {
+    "type": "LIFETIME",
+    "expiryTime": "UNLIMITED",
+    "remainingTimeInSeconds": -1
+   }
+  ]
+ }
+}

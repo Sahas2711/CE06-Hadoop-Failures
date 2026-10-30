@@ -1,0 +1,65 @@
+=== EXP 06 | kill -9 of running map attempt JVM | Fri Oct 30 08:39:59 UTC 2026 ===
+Job submitted (client log: evidence/logs/exp06_client.log)
+APP=application_1793346852065_0008 JOB=job_1793346852065_0008
+Found target attempt JVM PID=16576 at 08:40:17 (after 2 polls)
+cmdline: /bin/bash -c /usr/lib/jvm/java-17-openjdk-amd64/bin/java -Djava.net.preferIPv4Stack=true -Dhadoop.metrics.log.level=WARN  -Xmx400m --add-opens=java.base/java.lang=ALL-UNNAMED --add-exports=java.base/sun.net.dns=ALL-UNNAMED --add-exports=java.base/sun
+All YarnChild JVMs BEFORE kill:
+16211 org.apache.hadoop.util.RunJar
+16662 jdk.jcmd/sun.tools.jps.Jps
+2423 org.apache.hadoop.hdfs.server.namenode.NameNode
+16600 org.apache.hadoop.mapred.YarnChild
+2904 org.apache.hadoop.mapreduce.v2.hs.JobHistoryServer
+2792 org.apache.hadoop.yarn.server.resourcemanager.ResourceManager
+16601 org.apache.hadoop.mapred.YarnChild
+2505 org.apache.hadoop.hdfs.server.datanode.DataNode
+16602 org.apache.hadoop.mapred.YarnChild
+2909 org.apache.hadoop.yarn.server.nodemanager.NodeManager
+16382 org.apache.hadoop.mapreduce.v2.app.MRAppMaster
+SENT kill -9 to PID 16576 at 08:40:17
+PID 16576 alive after kill? NO
+Watching application_1793346852065_0008 until finish...
+  state=RUNNING UNDEFINED 08:40:19
+  state=RUNNING UNDEFINED 08:40:30
+  state=RUNNING UNDEFINED 08:40:40
+  state=RUNNING UNDEFINED 08:40:50
+  state=RUNNING UNDEFINED 08:41:00
+  state=FINISHED SUCCEEDED 08:41:11
+FINAL: FINISHED SUCCEEDED DURATION=72s
+--- task attempt states (expect task 000000: _0 FAILED + _1 SUCCEEDED) ---
+task_1793346852065_0008_m_000010 SUCCEEDED 0=SUCCEEDED (attempts=1)
+task_1793346852065_0008_m_000011 SUCCEEDED 0=SUCCEEDED (attempts=1)
+task_1793346852065_0008_m_000002 SUCCEEDED 0=SUCCEEDED (attempts=1)
+task_1793346852065_0008_m_000003 SUCCEEDED 0=SUCCEEDED (attempts=1)
+task_1793346852065_0008_m_000004 SUCCEEDED 0=SUCCEEDED (attempts=1)
+task_1793346852065_0008_m_000005 SUCCEEDED 0=SUCCEEDED (attempts=1)
+task_1793346852065_0008_m_000006 SUCCEEDED 0=SUCCEEDED (attempts=1)
+task_1793346852065_0008_m_000007 SUCCEEDED 0=SUCCEEDED (attempts=1)
+task_1793346852065_0008_m_000008 SUCCEEDED 0=SUCCEEDED (attempts=1)
+task_1793346852065_0008_m_000009 SUCCEEDED 0=SUCCEEDED (attempts=1)
+task_1793346852065_0008_m_000000 SUCCEEDED 0=FAILED 1=SUCCEEDED (attempts=2)
+task_1793346852065_0008_m_000001 SUCCEEDED 0=SUCCEEDED (attempts=1)
+--- yarn logs for the killed container (diagnostic) ---
+2026-10-30 08:40:42,319 INFO [EventFetcher for fetching Map Completion Events] org.apache.hadoop.mapreduce.task.reduce.ShuffleSchedulerImpl: Ignoring obsolete output of FAILED map-task: 'attempt_1793346852065_0008_m_000000_0'
+exec /bin/bash -c "$JAVA_HOME/bin/java -Djava.net.preferIPv4Stack=true -Dhadoop.metrics.log.level=WARN  -Xmx400m --add-opens=java.base/java.lang=ALL-UNNAMED --add-exports=java.base/sun.net.dns=ALL-UNNAMED --add-exports=java.base/sun.net.util=ALL-UNNAMED -Djava.io.tmpdir=$PWD/tmp -Dlog4j.configuration=container-log4j.properties -Dyarn.app.container.log.dir=/opt/hadoop-3.4.2/logs/userlogs/application_1793346852065_0008/container_1793346852065_0008_01_000002 -Dyarn.app.container.log.filesize=0 -Dhadoop.root.logger=INFO,CLA -Dhadoop.root.logfile=syslog org.apache.hadoop.mapred.YarnChild 127.0.1.1 34601 attempt_1793346852065_0008_m_000000_0 2 1>/opt/hadoop-3.4.2/logs/userlogs/application_1793346852065_0008/container_1793346852065_0008_01_000002/stdout 2>/opt/hadoop-3.4.2/logs/userlogs/application_1793346852065_0008/container_1793346852065_0008_01_000002/stderr "
+2026-10-30 08:40:14,605 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1793346852065_0008_m_000000_0 TaskAttempt Transitioned from NEW to UNASSIGNED
+2026-10-30 08:40:16,627 INFO [RMCommunicator Allocator] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Assigned container container_1793346852065_0008_01_000002 to attempt_1793346852065_0008_m_000000_0
+2026-10-30 08:40:16,820 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1793346852065_0008_m_000000_0 TaskAttempt Transitioned from UNASSIGNED to ASSIGNED
+2026-10-30 08:40:16,829 INFO [ContainerLauncher #0] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_REMOTE_LAUNCH for container container_1793346852065_0008_01_000002 taskAttempt attempt_1793346852065_0008_m_000000_0
+2026-10-30 08:40:16,832 INFO [ContainerLauncher #0] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Launching attempt_1793346852065_0008_m_000000_0
+2026-10-30 08:40:16,934 INFO [ContainerLauncher #0] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Shuffle port returned by ContainerManager for attempt_1793346852065_0008_m_000000_0 : 13562
+2026-10-30 08:40:16,946 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: TaskAttempt: [attempt_1793346852065_0008_m_000000_0] using containerId: [container_1793346852065_0008_01_000002 on NM: [Sahas.localdomain:38791]
+2026-10-30 08:40:16,947 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1793346852065_0008_m_000000_0 TaskAttempt Transitioned from ASSIGNED to RUNNING
+2026-10-30 08:40:18,711 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1793346852065_0008_m_000000_0: [2026-10-30 08:40:17.654]Container killed on request. Exit code is 137
+[2026-10-30 08:40:17.666]Container exited with a non-zero exit code 137. 
+[2026-10-30 08:40:17.668]Killed by external signal
+2026-10-30 08:40:18,740 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: attempt_1793346852065_0008_m_000000_0 transitioned from state RUNNING to FAILED, event type is TA_CONTAINER_COMPLETED and nodeId=Sahas.localdomain:38791
+2026-10-30 08:40:18,756 INFO [ContainerLauncher #3] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Processing the event EventType: CONTAINER_COMPLETED for container container_1793346852065_0008_01_000002 taskAttempt attempt_1793346852065_0008_m_000000_0
+--- output sample ---
+200	3100521
+302	73070
+304	266773
+403	224
+404	20871
+500	65
+501	41
+RESULT=SUCCESS EXP=06 JOBID=job_1793346852065_0008 KILLED_PID=16576

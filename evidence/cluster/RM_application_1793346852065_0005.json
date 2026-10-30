@@ -1,0 +1,58 @@
+{
+ "id": "application_1793346852065_0005",
+ "user": "root",
+ "name": "CE06-ALWAYS_FAIL-1793348627181",
+ "queue": "root.default",
+ "state": "FINISHED",
+ "finalStatus": "FAILED",
+ "progress": 100.0,
+ "trackingUI": "History",
+ "trackingUrl": "http://Sahas.localdomain:8088/proxy/application_1793346852065_0005/",
+ "diagnostics": "Task failed task_1793346852065_0005_m_000000\nJob failed as tasks failed. failedMaps:1 failedReduces:0 killedMaps:0 killedReduces: 0\n",
+ "clusterId": 1793346852065,
+ "applicationType": "MAPREDUCE",
+ "applicationTags": "",
+ "priority": 0,
+ "startedTime": 1793348631542,
+ "launchTime": 1793348632423,
+ "finishedTime": 1793348699052,
+ "elapsedTime": 67510,
+ "amContainerLogs": "http://Sahas.localdomain:8042/node/containerlogs/container_1793346852065_0005_01_000001/root",
+ "amHostHttpAddress": "Sahas.localdomain:8042",
+ "amRPCAddress": "Sahas.localdomain:38635",
+ "masterNodeId": "Sahas.localdomain:38791",
+ "allocatedMB": -1,
+ "allocatedVCores": -1,
+ "reservedMB": -1,
+ "reservedVCores": -1,
+ "runningContainers": -1,
+ "memorySeconds": 131149,
+ "vcoreSeconds": 248,
+ "queueUsagePercentage": 0.0,
+ "clusterUsagePercentage": 0.0,
+ "resourceSecondsMap": {
+  "entry": {
+   "key": "vcores",
+   "value": "248"
+  }
+ },
+ "preemptedResourceMB": 0,
+ "preemptedResourceVCores": 0,
+ "numNonAMContainerPreempted": 0,
+ "numAMContainerPreempted": 0,
+ "preemptedMemorySeconds": 0,
+ "preemptedVcoreSeconds": 0,
+ "preemptedResourceSecondsMap": {},
+ "logAggregationStatus": "SUCCEEDED",
+ "unmanagedApplication": false,
+ "amNodeLabelExpression": "",
+ "timeouts": {
+  "timeout": [
+   {
+    "type": "LIFETIME",
+    "expiryTime": "UNLIMITED",
+    "remainingTimeInSeconds": -1
+   }
+  ]
+ }
+}

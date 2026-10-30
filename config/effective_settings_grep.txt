@@ -1,0 +1,15 @@
+== effective mapreduce settings (grep) ==
+    <name>mapreduce.framework.name</name>
+    <name>mapreduce.map.maxattempts</name>
+    <name>mapreduce.reduce.maxattempts</name>
+    <name>mapreduce.map.speculative</name>
+    <name>mapreduce.reduce.speculative</name>
+
+== effective yarn settings (grep) ==
+/opt/hadoop-3.4.2/etc/hadoop/yarn-site.xml:    <name>yarn.nodemanager.resource.memory-mb</name>
+/opt/hadoop-3.4.2/etc/hadoop/yarn-site.xml:    <name>yarn.scheduler.minimum-allocation-mb</name>
+/opt/hadoop-3.4.2/etc/hadoop/yarn-site.xml:    <name>yarn.scheduler.maximum-allocation-mb</name>
+/opt/hadoop-3.4.2/etc/hadoop/yarn-site.xml:    <name>yarn.nodemanager.liveness-monitor.expiry-interval-secs</name>
+/opt/hadoop-3.4.2/etc/hadoop/capacity-scheduler.xml:    <name>yarn.scheduler.capacity.maximum-am-resource-percent</name>
+/opt/hadoop-3.4.2/etc/hadoop/capacity-scheduler.xml:    <name>yarn.scheduler.capacity.per-node-heartbeat.maximum-offswitch-assignments</name>
+/opt/hadoop-3.4.2/etc/hadoop/capacity-scheduler.xml:      during a node's heartbeat. Increasing this value can improve

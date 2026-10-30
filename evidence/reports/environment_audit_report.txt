@@ -1,0 +1,64 @@
+﻿================================================================================
+ CE-06 HADOOP PRACTICAL - ENVIRONMENT AUDIT REPORT
+ Student : NAGAR SAHAS PRAKASH (Roll 202301040048)
+ Subject : CE-06 - Failures and Speculative Execution
+ Generated: 2026-10-30 11:47:19
+ Host    : SAHAS / hp
+ Mode    : READ-ONLY (no system changes performed)
+================================================================================
+
+COMPONENT SUMMARY TABLE
+--------------------------------------------------------------------------------
+
+Component                            Installed Version                                                                                                                                                                      
+---------                            -----------------                                                                                                                                                                      
+Operating System                     Microsoft Windows 11 Home Single Language (10.0.26300) 64-bit                                                                                                                          
+CPU                                  12th Gen Intel(R) Core(TM) i5-12450H (8 cores / 12 threads)                                                                                                                            
+RAM                                  7.65 GB total / 0.8 GB free                                                                                                                                                            
+Disk Space                           C: free 17.2 GB / used 184.6 GB; D: free 47 GB / used 89.7 GB; E: free 55.2 GB / used 81.5 GB                                                                                          
+Java Runtime (java)                  openjdk version "17.0.17" 2025-10-21                                                                                                                                                   
+Java Compiler (javac)                javac 17.0.17                                                                                                                                                                          
+Hadoop                               Hadoop 3.4.2                                                                                                                                                                           
+winutils.exe (Windows Hadoop native) ABSENT                                                                                                                                                                                 
+Hadoop Config Files                  core-site.xml=EMPTY(default); hdfs-site.xml=EMPTY(default); mapred-site.xml=EMPTY(default); yarn-site.xml=EMPTY(default)                                                               
+Python                               Python 3.11.9                                                                                                                                                                          
+Maven                                Apache Maven 3.9.12 (848fbb4bf2d427b72bdb2471c22fced7ebd9a7a1)                                                                                                                         
+SSH Client                           OpenSSH_for_Windows_9.5p2, LibreSSL 3.8.2                                                                                                                                              
+Docker                               NOT FOUND                                                                                                                                                                              
+WSL                                  WSL2 (default distro: Ubuntu)                                                                                                                                                          
+Hadoop Daemons                       No Hadoop daemons running                                                                                                                                                              
+Ports                                port 5432 (PostgreSQL (conflict check)): LISTENING owned by postgres; port 8032 (YARN RM scheduler): free; port 8042 (YARN NodeManager UI): free; port 3306 (MySQL (conflict check)):  
+                                     free; port 22 (SSH): LISTENING owned by sshd; port 8088 (YARN ResourceManager UI): free; port 9000 (HDFS RPC (fs.defaultFS)): free; port 9870 (HDFS NameNode UI): free; port 9864      
+                                     (HDFS DataNode UI): free; port 19888 (MapReduce JobHistory UI): free                                                                                                                   
+HDFS                                 NOT TESTED (no cluster running)                                                                                                                                                        
+JDKs on Disk                         jdk-17.0.17.10-hotspot; jdk-21.0.9.10-hotspot; jdk-25.0.2; latest                                                                                                                      
+PATH Verification                    Hadoop bin (C:\bigdata\hadoop-3.4.2\bin\hadoop.cmd) NOT in user/machine PATH                                                                                                           
+
+
+
+MISSING DEPENDENCIES / CONFIGURATION PROBLEMS
+--------------------------------------------------------------------------------
+- MISCONFIGURED: Hadoop bin dir exists (C:\bigdata\hadoop-3.4.2\bin\hadoop.cmd) but is NOT on PATH.
+- MISCONFIGURED: Hadoop config files are all defaults (never configured for pseudo-distributed mode).
+- MISSING: winutils.exe absent - HDFS native operations on Windows will fail (needed for Windows-native mode).
+- WARNING: only 0.8 GB RAM free - close background apps before running the cluster.
+
+RAW WSL STATUS
+--------------------------------------------------------------------------------
+Default Distribution: Ubuntu
+
+Default Version: 2
+
+
+
+
+RAW WSL DISTROS
+--------------------------------------------------------------------------------
+  NAME      STATE           VERSION
+
+* Ubuntu    Stopped         2
+
+
+
+
+================================================================================

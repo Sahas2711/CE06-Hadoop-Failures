@@ -1,0 +1,19 @@
+# Large generated datasets (regenerate with: python3 scripts/prepare_dataset.py)
+# These exceed GitHub's 100MB file limit (~700MB total).
+dataset/clean/
+dataset/malformed/
+
+# Config backups
+*.bak
+
+# Build artifacts
+src/build/classes/
+
+# Python
+__pycache__/
+*.pyc
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp

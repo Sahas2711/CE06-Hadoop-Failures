@@ -1,0 +1,58 @@
+== jps ==
+2423 org.apache.hadoop.hdfs.server.namenode.NameNode
+27480 jdk.jcmd/sun.tools.jps.Jps
+2904 org.apache.hadoop.mapreduce.v2.hs.JobHistoryServer
+2792 org.apache.hadoop.yarn.server.resourcemanager.ResourceManager
+2505 org.apache.hadoop.hdfs.server.datanode.DataNode
+23788 org.apache.hadoop.yarn.server.nodemanager.NodeManager
+
+== yarn node -list -all ==
+2026-10-30 09:18:21,804 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at localhost/127.0.0.1:8032
+Total Nodes:3
+         Node-Id	     Node-State	Node-Http-Address	Number-of-Running-Containers
+Sahas.localdomain:35503	        RUNNING	Sahas.localdomain:8042	                           0
+Sahas.localdomain:38791	       SHUTDOWN	Sahas.localdomain:8042	                           0
+Sahas.localdomain:46549	       SHUTDOWN	Sahas.localdomain:8042	                           0
+
+== yarn application -list -appStates ALL ==
+2026-10-30 09:18:23,128 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at localhost/127.0.0.1:8032
+Total number of applications (application-types: [], states: [NEW, NEW_SAVING, SUBMITTED, ACCEPTED, RUNNING, FINISHED, FAILED, KILLED] and tags: []):11
+                Application-Id	    Application-Name	    Application-Type	      User	     Queue	             State	       Final-State	       Progress	                       Tracking-URL
+application_1793346852065_0005	CE06-ALWAYS_FAIL-1793348627181	           MAPREDUCE	      root	root.default	          FINISHED	            FAILED	           100%	http://Sahas.localdomain:19888/jobhistory/job/job_1793346852065_0005
+application_1793346852065_0006	CE06-SLOW_TASK-1793348736289	           MAPREDUCE	      root	root.default	          FINISHED	         SUCCEEDED	           100%	http://Sahas.localdomain:19888/jobhistory/job/job_1793346852065_0006
+application_1793346852065_0003	CE06-FAIL_ONCE-1793348041171	           MAPREDUCE	      root	root.default	          FINISHED	         SUCCEEDED	           100%	http://Sahas.localdomain:19888/jobhistory/job/job_1793346852065_0003
+application_1793346852065_0004	CE06-ALWAYS_FAIL-1793348525661	           MAPREDUCE	      root	root.default	          FINISHED	            FAILED	           100%	http://Sahas.localdomain:19888/jobhistory/job/job_1793346852065_0004
+application_1793346852065_0001	CE06-NORMAL-1793347703281	           MAPREDUCE	      root	root.default	          FINISHED	         SUCCEEDED	           100%	http://Sahas.localdomain:19888/jobhistory/job/job_1793346852065_0001
+application_1793346852065_0002	CE06-MALFORMED_RECORD_EXCEPTION-1793347885564	           MAPREDUCE	      root	root.default	          FINISHED	            FAILED	           100%	http://Sahas.localdomain:19888/jobhistory/job/job_1793346852065_0002
+application_1793346852065_0011	CE06-SLOW_TASK-1793351816193	           MAPREDUCE	      root	root.default	          FINISHED	         SUCCEEDED	           100%	http://Sahas.localdomain:19888/jobhistory/job/job_1793346852065_0011
+application_1793346852065_0009	CE06-SLOW_TASK-1793349774929	           MAPREDUCE	      root	root.default	          FINISHED	         SUCCEEDED	           100%	http://Sahas.localdomain:19888/jobhistory/job/job_1793346852065_0009
+application_1793346852065_0010	CE06-SLOW_TASK-1793350497885	           MAPREDUCE	      root	root.default	          FINISHED	         SUCCEEDED	           100%	http://Sahas.localdomain:19888/jobhistory/job/job_1793346852065_0010
+application_1793346852065_0007	CE06-SLOW_TASK-1793348876499	           MAPREDUCE	      root	root.default	          FINISHED	         SUCCEEDED	           100%	http://Sahas.localdomain:19888/jobhistory/job/job_1793346852065_0007
+application_1793346852065_0008	CE06-SLOW_TASK-1793349601410	           MAPREDUCE	      root	root.default	          FINISHED	         SUCCEEDED	           100%	http://Sahas.localdomain:19888/jobhistory/job/job_1793346852065_0008
+
+== hdfs dfs -ls -R /results /data ==
+drwxr-xr-x   - root supergroup          0 2026-10-30 08:10 /results/exp01_baseline
+-rw-r--r--   1 root supergroup          0 2026-10-30 08:10 /results/exp01_baseline/_SUCCESS
+-rw-r--r--   1 root supergroup         65 2026-10-30 08:10 /results/exp01_baseline/part-r-00000
+drwxr-xr-x   - root supergroup          0 2026-10-30 08:13 /results/exp02a_malformed_fail
+drwxr-xr-x   - root supergroup          0 2026-10-30 08:21 /results/exp02b_fail_once
+-rw-r--r--   1 root supergroup          0 2026-10-30 08:21 /results/exp02b_fail_once/_SUCCESS
+-rw-r--r--   1 root supergroup         65 2026-10-30 08:21 /results/exp02b_fail_once/part-r-00000
+drwxr-xr-x   - root supergroup          0 2026-10-30 08:23 /results/exp03a_attempts2
+drwxr-xr-x   - root supergroup          0 2026-10-30 08:24 /results/exp03b_attempts4
+drwxr-xr-x   - root supergroup          0 2026-10-30 09:14 /results/exp04_spec_off
+-rw-r--r--   1 root supergroup          0 2026-10-30 09:14 /results/exp04_spec_off/_SUCCESS
+-rw-r--r--   1 root supergroup         65 2026-10-30 09:14 /results/exp04_spec_off/part-r-00000
+drwxr-xr-x   - root supergroup          0 2026-10-30 09:18 /results/exp05_spec_on
+-rw-r--r--   1 root supergroup          0 2026-10-30 09:18 /results/exp05_spec_on/_SUCCESS
+-rw-r--r--   1 root supergroup         65 2026-10-30 09:18 /results/exp05_spec_on/part-r-00000
+drwxr-xr-x   - root supergroup          0 2026-10-30 08:41 /results/exp06_kill_attempt
+-rw-r--r--   1 root supergroup          0 2026-10-30 08:41 /results/exp06_kill_attempt/_SUCCESS
+-rw-r--r--   1 root supergroup         65 2026-10-30 08:41 /results/exp06_kill_attempt/part-r-00000
+drwxr-xr-x   - root supergroup          0 2026-10-30 08:45 /results/exp07_nodemanager_failure
+-rw-r--r--   1 root supergroup          0 2026-10-30 08:45 /results/exp07_nodemanager_failure/_SUCCESS
+-rw-r--r--   1 root supergroup         65 2026-10-30 08:45 /results/exp07_nodemanager_failure/part-r-00000
+drwxr-xr-x   - root supergroup          0 2026-10-30 08:02 /data/clean
+-rw-r--r--   1 root supergroup  373051409 2026-10-30 08:02 /data/clean/nasa_access_clean.log
+drwxr-xr-x   - root supergroup          0 2026-10-30 08:04 /data/malformed
+-rw-r--r--   1 root supergroup  376513974 2026-10-30 08:04 /data/malformed/nasa_access_malformed.log

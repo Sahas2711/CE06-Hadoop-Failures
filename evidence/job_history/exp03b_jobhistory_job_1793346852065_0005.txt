@@ -1,0 +1,42 @@
+########## JOB HISTORY EVIDENCE: job_1793346852065_0005 (exp 03b) ##########
+2026-10-30 08:25:09,475 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at localhost/127.0.0.1:8032
+Exception in thread "main" java.lang.IllegalArgumentException: JobId string : /results/exp03b_attempts4 is not properly formed
+	at org.apache.hadoop.mapreduce.JobID.forName(JobID.java:156)
+	at org.apache.hadoop.mapreduce.tools.CLI.run(CLI.java:401)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:82)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:97)
+	at org.apache.hadoop.mapred.JobClient.main(JobClient.java:1276)
+----- yarn application -status -----
+2026-10-30 08:25:20,837 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at localhost/127.0.0.1:8032
+2026-10-30 08:25:22,244 INFO conf.Configuration: resource-types.xml not found
+2026-10-30 08:25:22,248 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+Application Report : 
+	Application-Id : application_1793346852065_0005
+	Application-Name : CE06-ALWAYS_FAIL-1793348627181
+	Application-Type : MAPREDUCE
+	User : root
+	Queue : root.default
+	Application Priority : 0
+	Start-Time : 1793348631542
+	Finish-Time : 1793348699052
+	Progress : 100%
+	State : FINISHED
+	Final-State : FAILED
+	Tracking-URL : http://Sahas.localdomain:19888/jobhistory/job/job_1793346852065_0005
+	RPC Port : 38635
+	AM Host : Sahas.localdomain
+	Aggregate Resource Allocation : 131149 MB-seconds, 248 vcore-seconds
+	Aggregate Resource Preempted : 0 MB-seconds, 0 vcore-seconds
+	Log Aggregation Status : SUCCEEDED
+	Diagnostics : Task failed task_1793346852065_0005_m_000000
+Job failed as tasks failed. failedMaps:1 failedReduces:0 killedMaps:0 killedReduces: 0
+
+	Unmanaged Application : false
+	Application Node Label Expression : <Not set>
+	AM container Node Label Expression : <DEFAULT_PARTITION>
+	TimeoutType : LIFETIME	ExpiryTime : UNLIMITED	RemainingTime : -1seconds
+
+----- CE06 counters (mapred job -counter) -----
+Usage: job [-counter <job-id> <group-name> <counter-name>]
+----- task completion events (mapred job -events? fallback: history via REST) -----
+{"job":{"submitTime":1793348631512,"startTime":1793348643809,"finishTime":1793348697639,"id":"job_1793346852065_0005","name":"CE06-ALWAYS_FAIL-1793348627181","queue":"root.default","user":"root","state":"FAILED","mapsTotal":12,"mapsCompleted":8,"reducesTotal":1,"reducesCompleted":0,"uberized":false,"diagnostics":"Task failed task_1793346852065_0005_m_000000\nJob failed as tasks failed. failedMaps:1 failedReduces:0 killedMaps:0 killedReduces: 0","avgMapTime":12776,"avgReduceTime":0,"avgShuffleTime":0,"avgMergeTime":0,"failedReduceAttempts":0,"killedReduceAttempts":1,"successfulReduceAttempts":0,"failedMapAttempts":4,"killedMapAttempts":1,"successfulMapAttempts":7}}

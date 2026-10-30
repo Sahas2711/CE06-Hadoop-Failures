@@ -1,0 +1,116 @@
+=== EXP 03b | mode=ALWAYS_FAIL | input=/data/clean/nasa_access_clean.log | out=/results/exp03b_attempts4 | extra: -Dmapreduce.map.maxattempts=4 ===
+2026-10-30 08:23:48,462 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at localhost/127.0.0.1:8032
+2026-10-30 08:23:49,611 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/root/.staging/job_1793346852065_0005
+2026-10-30 08:23:50,363 INFO input.FileInputFormat: Total input files to process : 1
+2026-10-30 08:23:50,578 INFO mapreduce.JobSubmitter: number of splits:12
+2026-10-30 08:23:50,964 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1793346852065_0005
+2026-10-30 08:23:50,964 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2026-10-30 08:23:51,440 INFO conf.Configuration: resource-types.xml not found
+2026-10-30 08:23:51,440 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2026-10-30 08:23:51,632 INFO impl.YarnClientImpl: Submitted application application_1793346852065_0005
+2026-10-30 08:23:51,709 INFO mapreduce.Job: The url to track the job: http://Sahas.localdomain:8088/proxy/application_1793346852065_0005/
+2026-10-30 08:23:51,710 INFO mapreduce.Job: Running job: job_1793346852065_0005
+2026-10-30 08:24:05,140 INFO mapreduce.Job: Job job_1793346852065_0005 running in uber mode : false
+2026-10-30 08:24:05,142 INFO mapreduce.Job:  map 0% reduce 0%
+2026-10-30 08:24:17,896 INFO mapreduce.Job: Task Id : attempt_1793346852065_0005_m_000000_0, Status : FAILED
+Error: java.io.IOException: CE06 simulated failure: mode=ALWAYS_FAIL attempt=attempt_1793346852065_0005_m_000000_0 partition=0 (thrown in setup - every attempt fails)
+	at FailureSimulation$StatusMapper.setup(FailureSimulation.java:100)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:142)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:439)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1953)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:172)
+
+2026-10-30 08:24:24,219 INFO mapreduce.Job:  map 17% reduce 0%
+2026-10-30 08:24:31,427 INFO mapreduce.Job: Task Id : attempt_1793346852065_0005_m_000000_1, Status : FAILED
+Error: java.io.IOException: CE06 simulated failure: mode=ALWAYS_FAIL attempt=attempt_1793346852065_0005_m_000000_1 partition=0 (thrown in setup - every attempt fails)
+	at FailureSimulation$StatusMapper.setup(FailureSimulation.java:100)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:142)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:439)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1953)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:172)
+
+2026-10-30 08:24:38,584 INFO mapreduce.Job:  map 25% reduce 0%
+2026-10-30 08:24:39,613 INFO mapreduce.Job:  map 33% reduce 0%
+2026-10-30 08:24:44,748 INFO mapreduce.Job:  map 42% reduce 0%
+2026-10-30 08:24:48,913 INFO mapreduce.Job: Task Id : attempt_1793346852065_0005_m_000000_2, Status : FAILED
+Error: java.io.IOException: CE06 simulated failure: mode=ALWAYS_FAIL attempt=attempt_1793346852065_0005_m_000000_2 partition=0 (thrown in setup - every attempt fails)
+	at FailureSimulation$StatusMapper.setup(FailureSimulation.java:100)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:142)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:439)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1953)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:172)
+
+2026-10-30 08:24:51,981 INFO mapreduce.Job:  map 50% reduce 0%
+2026-10-30 08:24:58,111 INFO mapreduce.Job:  map 58% reduce 0%
+2026-10-30 08:24:59,128 INFO mapreduce.Job:  map 100% reduce 100%
+2026-10-30 08:25:00,171 INFO mapreduce.Job: Job job_1793346852065_0005 failed with state FAILED due to: Task failed task_1793346852065_0005_m_000000
+Job failed as tasks failed. failedMaps:1 failedReduces:0 killedMaps:0 killedReduces: 0
+
+2026-10-30 08:25:00,773 INFO mapreduce.Job: Counters: 44
+	File System Counters
+		FILE: Number of bytes read=0
+		FILE: Number of bytes written=23988435
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=234910529
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=21
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=0
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Failed map tasks=4
+		Killed map tasks=4
+		Killed reduce tasks=1
+		Launched map tasks=12
+		Launched reduce tasks=1
+		Other local map tasks=3
+		Data-local map tasks=9
+		Total time spent by all maps in occupied slots (ms)=510284
+		Total time spent by all reduces in occupied slots (ms)=55480
+		Total time spent by all map tasks (ms)=127571
+		Total time spent by all reduce tasks (ms)=13870
+		Total vcore-milliseconds taken by all map tasks=127571
+		Total vcore-milliseconds taken by all reduce tasks=13870
+		Total megabyte-milliseconds taken by all map tasks=65316352
+		Total megabyte-milliseconds taken by all reduce tasks=7101440
+	Map-Reduce Framework
+		Map input records=2180678
+		Map output records=2180678
+		Map output bytes=17445424
+		Map output materialized bytes=21806822
+		Input split bytes=833
+		Combine input records=0
+		Spilled Records=2180678
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=807
+		CPU time spent (ms)=62930
+		Physical memory (bytes) snapshot=2377834496
+		Virtual memory (bytes) snapshot=16200486912
+		Total committed heap usage (bytes)=1538260992
+		Peak Map Physical memory (bytes)=345694208
+		Peak Map Virtual memory (bytes)=2320883712
+	CE06 Failure Simulation
+		LINES_READ=2180678
+	File Input Format Counters 
+		Bytes Read=234909696
+CE06-EFFECTIVE-CONF mapreduce.map.maxattempts=4 mapreduce.map.speculative=true mapreduce.reduce.speculative=false mapreduce.framework.name=yarn
+CE06 COUNTERS mode=ALWAYS_FAIL job=job_1793346852065_0005 LINES_READ=2180678 MALFORMED_MARKER_ENCOUNTERED=0 BAD_LINE_SKIPPED=0 BAD_LINE_SKIPPED_ON_RETRY=0 UNPARSEABLE_SKIPPED=0 ALWAYS_FAIL_ATTEMPT_THROWN=0 SUCCESS=false
+=== EXIT=1 DURATION=76s ===
+JOBID=job_1793346852065_0005 APPID=application_1793346852065_0005
+Evidence written: /mnt/d/sem7/BDA-assignment/CE06_Hadoop_Practical/evidence/job_history/exp03b_*_job_1793346852065_0005.*
+RESULT=FAILED EXP=03b JOBID=job_1793346852065_0005

@@ -1,0 +1,243 @@
+[
+ {
+  "task": "task_1793346852065_0003_m_000000",
+  "type": "MAP",
+  "taskState": "SUCCEEDED",
+  "attempts": [
+   {
+    "id": "attempt_1793346852065_0003_m_000000_0",
+    "state": "FAILED",
+    "elapsed": 42388,
+    "diagnostics": "Error: java.io.IOException: CE06 simulated failure: mode=FAIL_ONCE first attempt attempt=attempt_1793346852065_0003_m_000000_0 record=CE06_BAD_RECORD this line is not a valid log entry at all\n\tat FailureSimulation$StatusMapper.map(FailureSimulation.java:131)\n\tat FailureSimulation$StatusMapper.map(FailureSimulation.java:75)\n\tat org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)\n\tat org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)\n\tat org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)\n\tat org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)\n\tat java.base/java.secu"
+   },
+   {
+    "id": "attempt_1793346852065_0003_m_000000_1",
+    "state": "SUCCEEDED",
+    "elapsed": 40344,
+    "diagnostics": ""
+   }
+  ]
+ },
+ {
+  "task": "task_1793346852065_0003_m_000001",
+  "type": "MAP",
+  "taskState": "SUCCEEDED",
+  "attempts": [
+   {
+    "id": "attempt_1793346852065_0003_m_000001_0",
+    "state": "FAILED",
+    "elapsed": 42502,
+    "diagnostics": "Error: java.io.IOException: CE06 simulated failure: mode=FAIL_ONCE first attempt attempt=attempt_1793346852065_0003_m_000001_0 record=CE06_BAD_RECORD host==\"?\" [====] \"????\" xx yy zz EXTRA\n\tat FailureSimulation$StatusMapper.map(FailureSimulation.java:131)\n\tat FailureSimulation$StatusMapper.map(FailureSimulation.java:75)\n\tat org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)\n\tat org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)\n\tat org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)\n\tat org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)\n\tat java.base/java.securit"
+   },
+   {
+    "id": "attempt_1793346852065_0003_m_000001_1",
+    "state": "SUCCEEDED",
+    "elapsed": 40147,
+    "diagnostics": ""
+   }
+  ]
+ },
+ {
+  "task": "task_1793346852065_0003_m_000002",
+  "type": "MAP",
+  "taskState": "SUCCEEDED",
+  "attempts": [
+   {
+    "id": "attempt_1793346852065_0003_m_000002_0",
+    "state": "FAILED",
+    "elapsed": 45232,
+    "diagnostics": "Error: java.io.IOException: CE06 simulated failure: mode=FAIL_ONCE first attempt attempt=attempt_1793346852065_0003_m_000002_0 record=CE06_BAD_RECORD\n\tat FailureSimulation$StatusMapper.map(FailureSimulation.java:131)\n\tat FailureSimulation$StatusMapper.map(FailureSimulation.java:75)\n\tat org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)\n\tat org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)\n\tat org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)\n\tat org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)\n\tat java.base/java.security.AccessController.doPrivileged(AccessC"
+   },
+   {
+    "id": "attempt_1793346852065_0003_m_000002_1",
+    "state": "SUCCEEDED",
+    "elapsed": 39604,
+    "diagnostics": ""
+   }
+  ]
+ },
+ {
+  "task": "task_1793346852065_0003_m_000003",
+  "type": "MAP",
+  "taskState": "SUCCEEDED",
+  "attempts": [
+   {
+    "id": "attempt_1793346852065_0003_m_000003_0",
+    "state": "FAILED",
+    "elapsed": 48449,
+    "diagnostics": "Error: java.io.IOException: CE06 simulated failure: mode=FAIL_ONCE first attempt attempt=attempt_1793346852065_0003_m_000003_0 record=CE06_BAD_RECORD this line is not a valid log entry at all\n\tat FailureSimulation$StatusMapper.map(FailureSimulation.java:131)\n\tat FailureSimulation$StatusMapper.map(FailureSimulation.java:75)\n\tat org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)\n\tat org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)\n\tat org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)\n\tat org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)\n\tat java.base/java.secu"
+   },
+   {
+    "id": "attempt_1793346852065_0003_m_000003_1",
+    "state": "SUCCEEDED",
+    "elapsed": 60289,
+    "diagnostics": ""
+   }
+  ]
+ },
+ {
+  "task": "task_1793346852065_0003_m_000004",
+  "type": "MAP",
+  "taskState": "SUCCEEDED",
+  "attempts": [
+   {
+    "id": "attempt_1793346852065_0003_m_000004_0",
+    "state": "FAILED",
+    "elapsed": 50906,
+    "diagnostics": "Error: java.io.IOException: CE06 simulated failure: mode=FAIL_ONCE first attempt attempt=attempt_1793346852065_0003_m_000004_0 record=CE06_BAD_RECORD host==\"?\" [====] \"????\" xx yy zz EXTRA\n\tat FailureSimulation$StatusMapper.map(FailureSimulation.java:131)\n\tat FailureSimulation$StatusMapper.map(FailureSimulation.java:75)\n\tat org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)\n\tat org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)\n\tat org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)\n\tat org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)\n\tat java.base/java.securit"
+   },
+   {
+    "id": "attempt_1793346852065_0003_m_000004_1",
+    "state": "SUCCEEDED",
+    "elapsed": 58981,
+    "diagnostics": ""
+   }
+  ]
+ },
+ {
+  "task": "task_1793346852065_0003_m_000005",
+  "type": "MAP",
+  "taskState": "SUCCEEDED",
+  "attempts": [
+   {
+    "id": "attempt_1793346852065_0003_m_000005_0",
+    "state": "FAILED",
+    "elapsed": 46979,
+    "diagnostics": "Error: java.io.IOException: CE06 simulated failure: mode=FAIL_ONCE first attempt attempt=attempt_1793346852065_0003_m_000005_0 record=CE06_BAD_RECORD\n\tat FailureSimulation$StatusMapper.map(FailureSimulation.java:131)\n\tat FailureSimulation$StatusMapper.map(FailureSimulation.java:75)\n\tat org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)\n\tat org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)\n\tat org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)\n\tat org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)\n\tat java.base/java.security.AccessController.doPrivileged(AccessC"
+   },
+   {
+    "id": "attempt_1793346852065_0003_m_000005_1",
+    "state": "SUCCEEDED",
+    "elapsed": 59319,
+    "diagnostics": ""
+   }
+  ]
+ },
+ {
+  "task": "task_1793346852065_0003_m_000006",
+  "type": "MAP",
+  "taskState": "SUCCEEDED",
+  "attempts": [
+   {
+    "id": "attempt_1793346852065_0003_m_000006_0",
+    "state": "FAILED",
+    "elapsed": 41420,
+    "diagnostics": "Error: java.io.IOException: CE06 simulated failure: mode=FAIL_ONCE first attempt attempt=attempt_1793346852065_0003_m_000006_0 record=CE06_BAD_RECORD this line is not a valid log entry at all\n\tat FailureSimulation$StatusMapper.map(FailureSimulation.java:131)\n\tat FailureSimulation$StatusMapper.map(FailureSimulation.java:75)\n\tat org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)\n\tat org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)\n\tat org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)\n\tat org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)\n\tat java.base/java.secu"
+   },
+   {
+    "id": "attempt_1793346852065_0003_m_000006_1",
+    "state": "SUCCEEDED",
+    "elapsed": 34088,
+    "diagnostics": ""
+   }
+  ]
+ },
+ {
+  "task": "task_1793346852065_0003_m_000007",
+  "type": "MAP",
+  "taskState": "SUCCEEDED",
+  "attempts": [
+   {
+    "id": "attempt_1793346852065_0003_m_000007_0",
+    "state": "FAILED",
+    "elapsed": 44033,
+    "diagnostics": "Error: java.io.IOException: CE06 simulated failure: mode=FAIL_ONCE first attempt attempt=attempt_1793346852065_0003_m_000007_0 record=CE06_BAD_RECORD host==\"?\" [====] \"????\" xx yy zz EXTRA\n\tat FailureSimulation$StatusMapper.map(FailureSimulation.java:131)\n\tat FailureSimulation$StatusMapper.map(FailureSimulation.java:75)\n\tat org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)\n\tat org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)\n\tat org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)\n\tat org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)\n\tat java.base/java.securit"
+   },
+   {
+    "id": "attempt_1793346852065_0003_m_000007_1",
+    "state": "SUCCEEDED",
+    "elapsed": 34066,
+    "diagnostics": ""
+   }
+  ]
+ },
+ {
+  "task": "task_1793346852065_0003_m_000008",
+  "type": "MAP",
+  "taskState": "SUCCEEDED",
+  "attempts": [
+   {
+    "id": "attempt_1793346852065_0003_m_000008_0",
+    "state": "FAILED",
+    "elapsed": 38882,
+    "diagnostics": "Error: java.io.IOException: CE06 simulated failure: mode=FAIL_ONCE first attempt attempt=attempt_1793346852065_0003_m_000008_0 record=CE06_BAD_RECORD\n\tat FailureSimulation$StatusMapper.map(FailureSimulation.java:131)\n\tat FailureSimulation$StatusMapper.map(FailureSimulation.java:75)\n\tat org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)\n\tat org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)\n\tat org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)\n\tat org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)\n\tat java.base/java.security.AccessController.doPrivileged(AccessC"
+   },
+   {
+    "id": "attempt_1793346852065_0003_m_000008_1",
+    "state": "SUCCEEDED",
+    "elapsed": 29529,
+    "diagnostics": ""
+   }
+  ]
+ },
+ {
+  "task": "task_1793346852065_0003_m_000009",
+  "type": "MAP",
+  "taskState": "SUCCEEDED",
+  "attempts": [
+   {
+    "id": "attempt_1793346852065_0003_m_000009_0",
+    "state": "SUCCEEDED",
+    "elapsed": 42868,
+    "diagnostics": ""
+   }
+  ]
+ },
+ {
+  "task": "task_1793346852065_0003_m_000010",
+  "type": "MAP",
+  "taskState": "SUCCEEDED",
+  "attempts": [
+   {
+    "id": "attempt_1793346852065_0003_m_000010_0",
+    "state": "FAILED",
+    "elapsed": 22690,
+    "diagnostics": "Error: java.io.IOException: CE06 simulated failure: mode=FAIL_ONCE first attempt attempt=attempt_1793346852065_0003_m_000010_0 record=CE06_BAD_RECORD host==\"?\" [====] \"????\" xx yy zz EXTRA\n\tat FailureSimulation$StatusMapper.map(FailureSimulation.java:131)\n\tat FailureSimulation$StatusMapper.map(FailureSimulation.java:75)\n\tat org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)\n\tat org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)\n\tat org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)\n\tat org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)\n\tat java.base/java.securit"
+   },
+   {
+    "id": "attempt_1793346852065_0003_m_000010_1",
+    "state": "SUCCEEDED",
+    "elapsed": 22200,
+    "diagnostics": ""
+   },
+   {
+    "id": "attempt_1793346852065_0003_m_000010_2",
+    "state": "KILLED",
+    "elapsed": 1106,
+    "diagnostics": "Speculation: attempt_1793346852065_0003_m_000010_1 succeeded first!"
+   }
+  ]
+ },
+ {
+  "task": "task_1793346852065_0003_m_000011",
+  "type": "MAP",
+  "taskState": "SUCCEEDED",
+  "attempts": [
+   {
+    "id": "attempt_1793346852065_0003_m_000011_0",
+    "state": "FAILED",
+    "elapsed": 15327,
+    "diagnostics": "Error: java.io.IOException: CE06 simulated failure: mode=FAIL_ONCE first attempt attempt=attempt_1793346852065_0003_m_000011_0 record=CE06_BAD_RECORD\n\tat FailureSimulation$StatusMapper.map(FailureSimulation.java:131)\n\tat FailureSimulation$StatusMapper.map(FailureSimulation.java:75)\n\tat org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)\n\tat org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)\n\tat org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)\n\tat org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)\n\tat java.base/java.security.AccessController.doPrivileged(AccessC"
+   },
+   {
+    "id": "attempt_1793346852065_0003_m_000011_1",
+    "state": "SUCCEEDED",
+    "elapsed": 8224,
+    "diagnostics": ""
+   }
+  ]
+ },
+ {
+  "task": "task_1793346852065_0003_r_000000",
+  "type": "REDUCE",
+  "taskState": "SUCCEEDED",
+  "attempts": [
+   {
+    "id": "attempt_1793346852065_0003_r_000000_0",
+    "state": "SUCCEEDED",
+    "elapsed": 192398,
+    "diagnostics": ""
+   }
+  ]
+ }
+]

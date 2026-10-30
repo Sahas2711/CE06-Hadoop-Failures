@@ -1,0 +1,39 @@
+{
+  "seed": 42,
+  "source_files": [
+    {
+      "file": "NASA_access_log_Aug95.gz",
+      "records": 1569898,
+      "well_formed": 1569870,
+      "naturally_malformed": 28
+    },
+    {
+      "file": "NASA_access_log_Jul95.gz",
+      "records": 1891715,
+      "well_formed": 1891695,
+      "naturally_malformed": 20
+    }
+  ],
+  "total_records": 3461613,
+  "well_formed": 3461565,
+  "naturally_malformed": 48,
+  "injected_malformed": 20,
+  "status_code_distribution": {
+    "200": 3100521,
+    "302": 73070,
+    "304": 266773,
+    "403": 224,
+    "404": 20871,
+    "500": 65,
+    "501": 41
+  },
+  "clean_file": "dataset/clean/nasa_access_clean.log",
+  "malformed_file": "dataset/malformed/nasa_access_malformed.log",
+  "naturally_malformed_samples": [
+    "198.213.130.253 - - [03/Aug/1995:11:29:02 -0400] \"GET /shuttle/missions/sts-34/mission-sts-34.html\"><IMG images/ssbuv1.gif SRC=\"images/small34p.gif/ HTTP/1.0\" 4",
+    "userp2.snowhill.com - - [05/Aug/1995:14:57:06 -0400] \"GET / \" HTTP/1.0\" 200 7034",
+    "jhanley.doe.state.la.us - - [08/Aug/1995:11:24:31 -0400] \"GET /ksc.html\" HTTP/1.0\" 404 -",
+    "redx3.cac.washington.edu - - [10/Aug/1995:18:45:48 -0400] \"GET /shuttle/missions/sts-70/images/ksc-95ec-o667.gif\" HTTP/1.0\" 404 -",
+    "redx3.cac.washington.edu - - [10/Aug/1995:18:45:49 -0400] \"GET /shuttle/missions/sts-70/images/ksc-95ec-o667.gif\" HTTP/1.0\" 404 -"
+  ]
+}

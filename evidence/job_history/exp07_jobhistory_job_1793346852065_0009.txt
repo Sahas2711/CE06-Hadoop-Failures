@@ -1,0 +1,105 @@
+########## JOB HISTORY: job_1793346852065_0009 (exp07 nodemanager failure) ##########
+2026-10-30 08:46:08,232 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at localhost/127.0.0.1:8032
+Exception in thread "main" java.lang.IllegalArgumentException: JobId string : /results/exp07_nodemanager_failure is not properly formed
+	at org.apache.hadoop.mapreduce.JobID.forName(JobID.java:156)
+	at org.apache.hadoop.mapreduce.tools.CLI.run(CLI.java:401)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:82)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:97)
+	at org.apache.hadoop.mapred.JobClient.main(JobClient.java:1276)
+----- application status -----
+2026-10-30 08:46:10,500 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at localhost/127.0.0.1:8032
+2026-10-30 08:46:10,869 INFO conf.Configuration: resource-types.xml not found
+2026-10-30 08:46:10,870 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+Application Report : 
+	Application-Id : application_1793346852065_0009
+	Application-Name : CE06-SLOW_TASK-1793349774929
+	Application-Type : MAPREDUCE
+	User : root
+	Queue : root.default
+	Application Priority : 0
+	Start-Time : 1793349778426
+	Finish-Time : 1793349957604
+	Progress : 100%
+	State : FINISHED
+	Final-State : SUCCEEDED
+	Tracking-URL : http://Sahas.localdomain:19888/jobhistory/job/job_1793346852065_0009
+	RPC Port : 33281
+	AM Host : Sahas.localdomain
+	Aggregate Resource Allocation : 186484 MB-seconds, 353 vcore-seconds
+	Aggregate Resource Preempted : 0 MB-seconds, 0 vcore-seconds
+	Log Aggregation Status : RUNNING
+	Diagnostics : 
+	Unmanaged Application : false
+	Application Node Label Expression : <Not set>
+	AM container Node Label Expression : <DEFAULT_PARTITION>
+	TimeoutType : LIFETIME	ExpiryTime : UNLIMITED	RemainingTime : -1seconds
+
+----- nodes final -----
+2026-10-30 08:46:11,666 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at localhost/127.0.0.1:8032
+Total Nodes:2
+         Node-Id	     Node-State	Node-Http-Address	Number-of-Running-Containers
+Sahas.localdomain:46549	        RUNNING	Sahas.localdomain:8042	                           0
+Sahas.localdomain:38791	       SHUTDOWN	Sahas.localdomain:8042	                           0
+----- Job Counters -----
+Usage: job [-counter <job-id> <group-name> <counter-name>]
+----- AM logs (recovery evidence) -----
+export PRELAUNCH_OUT="/opt/hadoop-3.4.2/logs/userlogs/application_1793346852065_0009/container_1793346852065_0009_01_000001/prelaunch.out"
+exec >"${PRELAUNCH_OUT}"
+export PRELAUNCH_ERR="/opt/hadoop-3.4.2/logs/userlogs/application_1793346852065_0009/container_1793346852065_0009_01_000001/prelaunch.err"
+exec 2>"${PRELAUNCH_ERR}"
+LogType:prelaunch.err
+End of LogType:prelaunch.err
+LogType:prelaunch.out
+End of LogType:prelaunch.out
+export PRELAUNCH_OUT="/opt/hadoop-3.4.2/logs/userlogs/application_1793346852065_0009/container_1793346852065_0009_01_000002/prelaunch.out"
+exec >"${PRELAUNCH_OUT}"
+export PRELAUNCH_ERR="/opt/hadoop-3.4.2/logs/userlogs/application_1793346852065_0009/container_1793346852065_0009_01_000002/prelaunch.err"
+exec 2>"${PRELAUNCH_ERR}"
+LogType:prelaunch.err
+End of LogType:prelaunch.err
+LogType:prelaunch.out
+End of LogType:prelaunch.out
+export PRELAUNCH_OUT="/opt/hadoop-3.4.2/logs/userlogs/application_1793346852065_0009/container_1793346852065_0009_01_000003/prelaunch.out"
+exec >"${PRELAUNCH_OUT}"
+export PRELAUNCH_ERR="/opt/hadoop-3.4.2/logs/userlogs/application_1793346852065_0009/container_1793346852065_0009_01_000003/prelaunch.err"
+exec 2>"${PRELAUNCH_ERR}"
+LogType:prelaunch.err
+End of LogType:prelaunch.err
+LogType:prelaunch.out
+End of LogType:prelaunch.out
+		Failed Shuffles=0
+export PRELAUNCH_OUT="/opt/hadoop-3.4.2/logs/userlogs/application_1793346852065_0009/container_1793346852065_0009_01_000004/prelaunch.out"
+exec >"${PRELAUNCH_OUT}"
+export PRELAUNCH_ERR="/opt/hadoop-3.4.2/logs/userlogs/application_1793346852065_0009/container_1793346852065_0009_01_000004/prelaunch.err"
+exec 2>"${PRELAUNCH_ERR}"
+LogType:prelaunch.err
+End of LogType:prelaunch.err
+LogType:prelaunch.out
+End of LogType:prelaunch.out
+		Failed Shuffles=0
+export PRELAUNCH_OUT="/opt/hadoop-3.4.2/logs/userlogs/application_1793346852065_0009/container_1793346852065_0009_01_000005/prelaunch.out"
+exec >"${PRELAUNCH_OUT}"
+export PRELAUNCH_ERR="/opt/hadoop-3.4.2/logs/userlogs/application_1793346852065_0009/container_1793346852065_0009_01_000005/prelaunch.err"
+exec 2>"${PRELAUNCH_ERR}"
+LogType:prelaunch.err
+End of LogType:prelaunch.err
+LogType:prelaunch.out
+End of LogType:prelaunch.out
+		Failed Shuffles=0
+export PRELAUNCH_OUT="/opt/hadoop-3.4.2/logs/userlogs/application_1793346852065_0009/container_1793346852065_0009_01_000006/prelaunch.out"
+exec >"${PRELAUNCH_OUT}"
+export PRELAUNCH_ERR="/opt/hadoop-3.4.2/logs/userlogs/application_1793346852065_0009/container_1793346852065_0009_01_000006/prelaunch.err"
+exec 2>"${PRELAUNCH_ERR}"
+LogType:prelaunch.err
+End of LogType:prelaunch.err
+LogType:prelaunch.out
+End of LogType:prelaunch.out
+		Failed Shuffles=0
+export PRELAUNCH_OUT="/opt/hadoop-3.4.2/logs/userlogs/application_1793346852065_0009/container_1793346852065_0009_01_000007/prelaunch.out"
+exec >"${PRELAUNCH_OUT}"
+export PRELAUNCH_ERR="/opt/hadoop-3.4.2/logs/userlogs/application_1793346852065_0009/container_1793346852065_0009_01_000007/prelaunch.err"
+exec 2>"${PRELAUNCH_ERR}"
+LogType:prelaunch.err
+End of LogType:prelaunch.err
+LogType:prelaunch.out
+End of LogType:prelaunch.out

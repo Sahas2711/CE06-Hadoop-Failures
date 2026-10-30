@@ -1,0 +1,250 @@
+===================================================================
+CE-06 EVIDENCE SUMMARY  -  collected 2026-10-30 09:18:20 UTC
+===================================================================
+
+[1] Cluster snapshot -> evidence/cluster/cluster_snapshot.txt
+[2] Config snapshots -> config/
+
+[3] JobHistory REST evidence -> evidence/job_history/
+
+JOB    EXPERIMENT                                     STATE      tasks attempts    succ  failed  killed
+--------------------------------------------------------------------------------------------------------
+0001   EXP1  NORMAL baseline                          SUCCEEDED     13     13      13       0       0
+0002   EXP2a MALFORMED_RECORD_EXCEPTION maxattempts=2 (expect FAIL) FAILED        13      6       0       4       2
+0003   EXP2b FAIL_ONCE retry-succeeds (expect SUCCESS) SUCCEEDED     13     25      13      11       1
+0004   EXP3a ALWAYS_FAIL maxattempts=2 (expect FAIL)  FAILED        13      6       2       2       2
+0005   EXP3b ALWAYS_FAIL maxattempts=4 (expect FAIL)  FAILED        13     13       7       4       2
+0006   EXP4  SLOW_TASK spec OFF                       SUCCEEDED     13     13      13       0       0
+0007   EXP5  SLOW_TASK spec ON                        SUCCEEDED     13     13      13       0       0
+0008   EXP6  KILL -9 task attempt                     SUCCEEDED     13     14      13       1       0
+0009   EXP7  NodeManager failure                      SUCCEEDED     13     20      13       0       7
+0010   CE06-SLOW_TASK-1793350497885                   SUCCEEDED     13     13      13       0       0
+0011   CE06-SLOW_TASK-1793351816193                   SUCCEEDED     13     14      13       0       1
+
+========================================================================================================
+PER-TASK ATTEMPT DETAIL (MAP tasks + any task with >1 attempt)
+========================================================================================================
+
+--- job_1793346852065_0001  EXP1  NORMAL baseline  [SUCCEEDED] ---
+  task_1793346852065_0001_m_000000           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0001_m_000001           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0001_m_000002           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0001_m_000003           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0001_m_000004           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0001_m_000005           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0001_m_000006           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0001_m_000007           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0001_m_000008           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0001_m_000009           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0001_m_000010           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0001_m_000011           [MAP/SUCCEEDED] 0=SUCCEEDED
+
+--- job_1793346852065_0002  EXP2a MALFORMED_RECORD_EXCEPTION maxattempts=2 (expect FAIL)  [FAILED] ---
+  task_1793346852065_0002_m_000000           [MAP/FAILED] 0=FAILED 1=FAILED
+  task_1793346852065_0002_m_000001           [MAP/FAILED] 0=FAILED 1=KILLED
+  task_1793346852065_0002_m_000002           [MAP/FAILED] 0=FAILED 1=KILLED
+  task_1793346852065_0002_m_000003           [MAP/FAILED] 
+  task_1793346852065_0002_m_000004           [MAP/FAILED] 
+  task_1793346852065_0002_m_000005           [MAP/FAILED] 
+  task_1793346852065_0002_m_000006           [MAP/FAILED] 
+  task_1793346852065_0002_m_000007           [MAP/FAILED] 
+  task_1793346852065_0002_m_000008           [MAP/FAILED] 
+  task_1793346852065_0002_m_000009           [MAP/FAILED] 
+  task_1793346852065_0002_m_000010           [MAP/FAILED] 
+  task_1793346852065_0002_m_000011           [MAP/FAILED] 
+  task_1793346852065_0002_r_000000           [REDUCE/FAILED] 
+
+--- job_1793346852065_0003  EXP2b FAIL_ONCE retry-succeeds (expect SUCCESS)  [SUCCEEDED] ---
+  task_1793346852065_0003_m_000000           [MAP/SUCCEEDED] 0=FAILED 1=SUCCEEDED
+  task_1793346852065_0003_m_000001           [MAP/SUCCEEDED] 0=FAILED 1=SUCCEEDED
+  task_1793346852065_0003_m_000002           [MAP/SUCCEEDED] 0=FAILED 1=SUCCEEDED
+  task_1793346852065_0003_m_000003           [MAP/SUCCEEDED] 0=FAILED 1=SUCCEEDED
+  task_1793346852065_0003_m_000004           [MAP/SUCCEEDED] 0=FAILED 1=SUCCEEDED
+  task_1793346852065_0003_m_000005           [MAP/SUCCEEDED] 0=FAILED 1=SUCCEEDED
+  task_1793346852065_0003_m_000006           [MAP/SUCCEEDED] 0=FAILED 1=SUCCEEDED
+  task_1793346852065_0003_m_000007           [MAP/SUCCEEDED] 0=FAILED 1=SUCCEEDED
+  task_1793346852065_0003_m_000008           [MAP/SUCCEEDED] 0=FAILED 1=SUCCEEDED
+  task_1793346852065_0003_m_000009           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0003_m_000010           [MAP/SUCCEEDED] 0=FAILED 1=SUCCEEDED 2=KILLED
+  task_1793346852065_0003_m_000011           [MAP/SUCCEEDED] 0=FAILED 1=SUCCEEDED
+
+--- job_1793346852065_0004  EXP3a ALWAYS_FAIL maxattempts=2 (expect FAIL)  [FAILED] ---
+  task_1793346852065_0004_m_000000           [MAP/FAILED] 0=FAILED 1=FAILED
+  task_1793346852065_0004_m_000001           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0004_m_000002           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0004_m_000003           [MAP/FAILED] 0=KILLED
+  task_1793346852065_0004_m_000004           [MAP/FAILED] 0=KILLED
+  task_1793346852065_0004_m_000005           [MAP/FAILED] 
+  task_1793346852065_0004_m_000006           [MAP/FAILED] 
+  task_1793346852065_0004_m_000007           [MAP/FAILED] 
+  task_1793346852065_0004_m_000008           [MAP/FAILED] 
+  task_1793346852065_0004_m_000009           [MAP/FAILED] 
+  task_1793346852065_0004_m_000010           [MAP/FAILED] 
+  task_1793346852065_0004_m_000011           [MAP/FAILED] 
+  task_1793346852065_0004_r_000000           [REDUCE/FAILED] 
+
+--- job_1793346852065_0005  EXP3b ALWAYS_FAIL maxattempts=4 (expect FAIL)  [FAILED] ---
+  task_1793346852065_0005_m_000000           [MAP/FAILED] 0=FAILED 1=FAILED 2=FAILED 3=FAILED
+  task_1793346852065_0005_m_000001           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0005_m_000002           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0005_m_000003           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0005_m_000004           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0005_m_000005           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0005_m_000006           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0005_m_000007           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0005_m_000008           [MAP/FAILED] 0=KILLED
+  task_1793346852065_0005_m_000009           [MAP/FAILED] 
+  task_1793346852065_0005_m_000010           [MAP/FAILED] 
+  task_1793346852065_0005_m_000011           [MAP/FAILED] 
+  task_1793346852065_0005_r_000000           [REDUCE/FAILED] 0=KILLED
+
+--- job_1793346852065_0006  EXP4  SLOW_TASK spec OFF  [SUCCEEDED] ---
+  task_1793346852065_0006_m_000000           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0006_m_000001           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0006_m_000002           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0006_m_000003           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0006_m_000004           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0006_m_000005           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0006_m_000006           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0006_m_000007           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0006_m_000008           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0006_m_000009           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0006_m_000010           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0006_m_000011           [MAP/SUCCEEDED] 0=SUCCEEDED
+
+--- job_1793346852065_0007  EXP5  SLOW_TASK spec ON  [SUCCEEDED] ---
+  task_1793346852065_0007_m_000000           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0007_m_000001           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0007_m_000002           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0007_m_000003           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0007_m_000004           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0007_m_000005           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0007_m_000006           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0007_m_000007           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0007_m_000008           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0007_m_000009           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0007_m_000010           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0007_m_000011           [MAP/SUCCEEDED] 0=SUCCEEDED
+
+--- job_1793346852065_0008  EXP6  KILL -9 task attempt  [SUCCEEDED] ---
+  task_1793346852065_0008_m_000000           [MAP/SUCCEEDED] 0=FAILED 1=SUCCEEDED
+  task_1793346852065_0008_m_000001           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0008_m_000002           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0008_m_000003           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0008_m_000004           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0008_m_000005           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0008_m_000006           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0008_m_000007           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0008_m_000008           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0008_m_000009           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0008_m_000010           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0008_m_000011           [MAP/SUCCEEDED] 0=SUCCEEDED
+
+--- job_1793346852065_0009  EXP7  NodeManager failure  [SUCCEEDED] ---
+  task_1793346852065_0009_m_000000           [MAP/SUCCEEDED] 1000=SUCCEEDED
+  task_1793346852065_0009_m_000001           [MAP/SUCCEEDED] 0=KILLED 1000=SUCCEEDED
+  task_1793346852065_0009_m_000002           [MAP/SUCCEEDED] 0=KILLED 1000=SUCCEEDED
+  task_1793346852065_0009_m_000003           [MAP/SUCCEEDED] 0=KILLED 1000=SUCCEEDED
+  task_1793346852065_0009_m_000004           [MAP/SUCCEEDED] 0=KILLED 1000=SUCCEEDED
+  task_1793346852065_0009_m_000005           [MAP/SUCCEEDED] 0=KILLED 1000=SUCCEEDED
+  task_1793346852065_0009_m_000006           [MAP/SUCCEEDED] 0=KILLED 1000=SUCCEEDED
+  task_1793346852065_0009_m_000007           [MAP/SUCCEEDED] 0=KILLED 1000=SUCCEEDED
+  task_1793346852065_0009_m_000008           [MAP/SUCCEEDED] 1000=SUCCEEDED
+  task_1793346852065_0009_m_000009           [MAP/SUCCEEDED] 1000=SUCCEEDED
+  task_1793346852065_0009_m_000010           [MAP/SUCCEEDED] 1000=SUCCEEDED
+  task_1793346852065_0009_m_000011           [MAP/SUCCEEDED] 1000=SUCCEEDED
+
+--- job_1793346852065_0010  CE06-SLOW_TASK-1793350497885  [SUCCEEDED] ---
+  task_1793346852065_0010_m_000000           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0010_m_000001           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0010_m_000002           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0010_m_000003           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0010_m_000004           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0010_m_000005           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0010_m_000006           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0010_m_000007           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0010_m_000008           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0010_m_000009           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0010_m_000010           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0010_m_000011           [MAP/SUCCEEDED] 0=SUCCEEDED
+
+--- job_1793346852065_0011  CE06-SLOW_TASK-1793351816193  [SUCCEEDED] ---
+  task_1793346852065_0011_m_000000           [MAP/SUCCEEDED] 0=KILLED 1=SUCCEEDED
+  task_1793346852065_0011_m_000001           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0011_m_000002           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0011_m_000003           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0011_m_000004           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0011_m_000005           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0011_m_000006           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0011_m_000007           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0011_m_000008           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0011_m_000009           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0011_m_000010           [MAP/SUCCEEDED] 0=SUCCEEDED
+  task_1793346852065_0011_m_000011           [MAP/SUCCEEDED] 0=SUCCEEDED
+
+[4] ResourceManager application records -> evidence/cluster/
+
+APPLICATION                      STATE      FINAL      PROG%    DIAGNOSTICS (truncated)
+------------------------------------------------------------------------------------------------------------------------
+application_1793346852065_0001   FINISHED   SUCCEEDED  100.0    
+application_1793346852065_0002   FINISHED   FAILED     100.0    Task failed task_1793346852065_0002_m_000000 Job failed as tasks failed. failedMaps:1 failedReduces:0 killedMaps:0 killedReduces: 0 
+application_1793346852065_0003   FINISHED   SUCCEEDED  100.0    
+application_1793346852065_0004   FINISHED   FAILED     100.0    Task failed task_1793346852065_0004_m_000000 Job failed as tasks failed. failedMaps:1 failedReduces:0 killedMaps:0 killedReduces: 0 
+application_1793346852065_0005   FINISHED   FAILED     100.0    Task failed task_1793346852065_0005_m_000000 Job failed as tasks failed. failedMaps:1 failedReduces:0 killedMaps:0 killedReduces: 0 
+application_1793346852065_0006   FINISHED   SUCCEEDED  100.0    
+application_1793346852065_0007   FINISHED   SUCCEEDED  100.0    
+application_1793346852065_0008   FINISHED   SUCCEEDED  100.0    
+application_1793346852065_0009   FINISHED   SUCCEEDED  100.0    
+application_1793346852065_0010   FINISHED   SUCCEEDED  100.0    
+application_1793346852065_0011   FINISHED   SUCCEEDED  100.0    
+
+[5] Aggregated YARN logs (CE06 exceptions for failed attempts) -> evidence/logs/
+    application_1793346852065_0002: 16 CE06 exception occurrences captured
+    application_1793346852065_0004: 8 CE06 exception occurrences captured
+    application_1793346852065_0005: 16 CE06 exception occurrences captured
+
+[6] Output verification (successful jobs must agree with baseline) -> evidence/
+Baseline exp01 vs others:
+  IDENTICAL: /results/exp02b_fail_once == /results/exp01_baseline
+  IDENTICAL: /results/exp04_spec_off == /results/exp01_baseline
+  IDENTICAL: /results/exp05_spec_on == /results/exp01_baseline
+  IDENTICAL: /results/exp06_kill_attempt == /results/exp01_baseline
+  IDENTICAL: /results/exp07_nodemanager_failure == /results/exp01_baseline
+
+Baseline content:
+200	3100521
+302	73070
+304	266773
+403	224
+404	20871
+500	65
+501	41
+
+[7] JobHistory UI HTML pages -> evidence/ui/ (11 files)
+
+[8] Console logs -> evidence/logs/
+    exp01_normal_run.log: RESULT=SUCCESS EXP=01 JOBID=job_1793346852065_0001
+    exp02a_malformed_record_exception_run.log: RESULT=FAILED EXP=02a JOBID=job_1793346852065_0002
+    exp02b_fail_once_run.log: RESULT=SUCCESS EXP=02b JOBID=job_1793346852065_0003
+    exp03a_always_fail_run.log: RESULT=FAILED EXP=03a JOBID=job_1793346852065_0004
+    exp03b_always_fail_run.log: RESULT=FAILED EXP=03b JOBID=job_1793346852065_0005
+    exp04_slow_task_run.log: RESULT=SUCCESS EXP=04 JOBID=job_1793346852065_0006
+    exp04v2_slow_task_run.log: no RESULT line
+    exp05_slow_task_run.log: no RESULT line
+    exp05_spec_on_run.log: RESULT=SUCCESS EXP=05 JOBID=job_1793346852065_0007
+    exp05v2_slow_task_run.log: RESULT=SUCCESS EXP=05v2 JOBID=job_1793346852065_0011
+    exp06_kill_attempt_run.log: RESULT=SUCCESS EXP=06 JOBID=job_1793346852065_0008 KILLED_PID=16576
+    exp07_nodemanager_failure_run.log: RESULT=SUCCESS EXP=07 JOBID=job_1793346852065_0009
+    final_run.log: no RESULT line
+
+===================================================================
+Collection complete. Files:
+  evidence/REPORT_EVIDENCE_SUMMARY.txt   <- this summary
+  evidence/job_history/JOB_<id>_task_attempts.json  <- attempt states
+  evidence/job_history/JOB_<id>_counters.json       <- MR counters
+  evidence/cluster/RM_<appid>.json        <- RM app record + diagnostics
+  evidence/logs/*_run.log                 <- console logs
+  evidence/logs/*_failure_stacktraces.log <- exception stack traces
+  evidence/ui/                            <- JobHistory UI HTML
+  config/                                 <- cluster configs used
+===================================================================

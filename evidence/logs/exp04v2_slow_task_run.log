@@ -1,0 +1,12 @@
+=== EXP 04v2 | mode=SLOW_TASK | input=/data/clean/nasa_access_clean.log | out=/results/exp04_spec_off | extra: -Dce06.sleep.ms=400 -Dmapreduce.map.speculative=false -Dmapreduce.reduce.speculative=false ===
+2026-10-30 08:54:58,656 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at localhost/127.0.0.1:8032
+2026-10-30 08:54:59,058 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/root/.staging/job_1793346852065_0010
+2026-10-30 08:54:59,429 INFO input.FileInputFormat: Total input files to process : 1
+2026-10-30 08:54:59,546 INFO mapreduce.JobSubmitter: number of splits:12
+2026-10-30 08:54:59,766 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1793346852065_0010
+2026-10-30 08:54:59,767 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2026-10-30 08:54:59,959 INFO conf.Configuration: resource-types.xml not found
+2026-10-30 08:54:59,959 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2026-10-30 08:55:00,123 INFO impl.YarnClientImpl: Submitted application application_1793346852065_0010
+2026-10-30 08:55:00,163 INFO mapreduce.Job: The url to track the job: http://Sahas.localdomain:8088/proxy/application_1793346852065_0010/
+2026-10-30 08:55:00,164 INFO mapreduce.Job: Running job: job_1793346852065_0010

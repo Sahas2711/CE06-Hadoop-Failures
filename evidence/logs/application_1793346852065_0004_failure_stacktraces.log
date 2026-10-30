@@ -1,0 +1,71 @@
+2026-10-30 08:23:11,713 INFO [main] org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2026-10-30 08:23:11,767 WARN [main] org.apache.hadoop.mapred.YarnChild: Exception running child : java.io.IOException: CE06 simulated failure: mode=ALWAYS_FAIL attempt=attempt_1793346852065_0004_m_000000_1 partition=0 (thrown in setup - every attempt fails)
+	at FailureSimulation$StatusMapper.setup(FailureSimulation.java:100)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:142)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+--
+2026-10-30 08:22:49,875 INFO [main] org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2026-10-30 08:22:50,023 WARN [main] org.apache.hadoop.mapred.YarnChild: Exception running child : java.io.IOException: CE06 simulated failure: mode=ALWAYS_FAIL attempt=attempt_1793346852065_0004_m_000000_0 partition=0 (thrown in setup - every attempt fails)
+	at FailureSimulation$StatusMapper.setup(FailureSimulation.java:100)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:142)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+--
+2026-10-30 08:22:50,281 INFO [IPC Server handler 3 on default port 45705] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1793346852065_0004_m_000000_0 is : 0.0
+2026-10-30 08:22:50,460 ERROR [IPC Server handler 0 on default port 45705] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Task: attempt_1793346852065_0004_m_000000_0 - exited : java.io.IOException: CE06 simulated failure: mode=ALWAYS_FAIL attempt=attempt_1793346852065_0004_m_000000_0 partition=0 (thrown in setup - every attempt fails)
+	at FailureSimulation$StatusMapper.setup(FailureSimulation.java:100)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:142)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+--
+
+2026-10-30 08:22:50,462 INFO [IPC Server handler 0 on default port 45705] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Diagnostics report from attempt_1793346852065_0004_m_000000_0: Error: java.io.IOException: CE06 simulated failure: mode=ALWAYS_FAIL attempt=attempt_1793346852065_0004_m_000000_0 partition=0 (thrown in setup - every attempt fails)
+	at FailureSimulation$StatusMapper.setup(FailureSimulation.java:100)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:142)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+--
+
+2026-10-30 08:22:50,478 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1793346852065_0004_m_000000_0: Error: java.io.IOException: CE06 simulated failure: mode=ALWAYS_FAIL attempt=attempt_1793346852065_0004_m_000000_0 partition=0 (thrown in setup - every attempt fails)
+	at FailureSimulation$StatusMapper.setup(FailureSimulation.java:100)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:142)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+--
+2026-10-30 08:23:11,792 INFO [IPC Server handler 7 on default port 45705] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1793346852065_0004_m_000000_1 is : 0.0
+2026-10-30 08:23:11,873 ERROR [IPC Server handler 12 on default port 45705] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Task: attempt_1793346852065_0004_m_000000_1 - exited : java.io.IOException: CE06 simulated failure: mode=ALWAYS_FAIL attempt=attempt_1793346852065_0004_m_000000_1 partition=0 (thrown in setup - every attempt fails)
+	at FailureSimulation$StatusMapper.setup(FailureSimulation.java:100)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:142)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+--
+
+2026-10-30 08:23:11,874 INFO [IPC Server handler 12 on default port 45705] org.apache.hadoop.mapred.TaskAttemptListenerImpl: Diagnostics report from attempt_1793346852065_0004_m_000000_1: Error: java.io.IOException: CE06 simulated failure: mode=ALWAYS_FAIL attempt=attempt_1793346852065_0004_m_000000_1 partition=0 (thrown in setup - every attempt fails)
+	at FailureSimulation$StatusMapper.setup(FailureSimulation.java:100)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:142)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+--
+
+2026-10-30 08:23:11,876 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl: Diagnostics report from attempt_1793346852065_0004_m_000000_1: Error: java.io.IOException: CE06 simulated failure: mode=ALWAYS_FAIL attempt=attempt_1793346852065_0004_m_000000_1 partition=0 (thrown in setup - every attempt fails)
+	at FailureSimulation$StatusMapper.setup(FailureSimulation.java:100)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:142)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)

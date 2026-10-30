@@ -1,0 +1,119 @@
+[
+ {
+  "task": "task_1793346852065_0002_m_000000",
+  "type": "MAP",
+  "taskState": "FAILED",
+  "attempts": [
+   {
+    "id": "attempt_1793346852065_0002_m_000000_0",
+    "state": "FAILED",
+    "elapsed": 28991,
+    "diagnostics": "Error: java.io.IOException: CE06 simulated failure: mode=MALFORMED_RECORD_EXCEPTION attempt=attempt_1793346852065_0002_m_000000_0 record=CE06_BAD_RECORD this line is not a valid log entry at all\n\tat FailureSimulation$StatusMapper.map(FailureSimulation.java:124)\n\tat FailureSimulation$StatusMapper.map(FailureSimulation.java:75)\n\tat org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)\n\tat org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)\n\tat org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)\n\tat org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)\n\tat java.base/java.s"
+   },
+   {
+    "id": "attempt_1793346852065_0002_m_000000_1",
+    "state": "FAILED",
+    "elapsed": 23439,
+    "diagnostics": "Error: java.io.IOException: CE06 simulated failure: mode=MALFORMED_RECORD_EXCEPTION attempt=attempt_1793346852065_0002_m_000000_1 record=CE06_BAD_RECORD this line is not a valid log entry at all\n\tat FailureSimulation$StatusMapper.map(FailureSimulation.java:124)\n\tat FailureSimulation$StatusMapper.map(FailureSimulation.java:75)\n\tat org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)\n\tat org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)\n\tat org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)\n\tat org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)\n\tat java.base/java.s"
+   }
+  ]
+ },
+ {
+  "task": "task_1793346852065_0002_m_000001",
+  "type": "MAP",
+  "taskState": "FAILED",
+  "attempts": [
+   {
+    "id": "attempt_1793346852065_0002_m_000001_0",
+    "state": "FAILED",
+    "elapsed": 29061,
+    "diagnostics": "Error: java.io.IOException: CE06 simulated failure: mode=MALFORMED_RECORD_EXCEPTION attempt=attempt_1793346852065_0002_m_000001_0 record=CE06_BAD_RECORD host==\"?\" [====] \"????\" xx yy zz EXTRA\n\tat FailureSimulation$StatusMapper.map(FailureSimulation.java:124)\n\tat FailureSimulation$StatusMapper.map(FailureSimulation.java:75)\n\tat org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)\n\tat org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)\n\tat org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)\n\tat org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)\n\tat java.base/java.secu"
+   },
+   {
+    "id": "attempt_1793346852065_0002_m_000001_1",
+    "state": "KILLED",
+    "elapsed": 23353,
+    "diagnostics": "Task KILL is received. Killing attempt!"
+   }
+  ]
+ },
+ {
+  "task": "task_1793346852065_0002_m_000002",
+  "type": "MAP",
+  "taskState": "FAILED",
+  "attempts": [
+   {
+    "id": "attempt_1793346852065_0002_m_000002_0",
+    "state": "FAILED",
+    "elapsed": 30618,
+    "diagnostics": "Error: java.io.IOException: CE06 simulated failure: mode=MALFORMED_RECORD_EXCEPTION attempt=attempt_1793346852065_0002_m_000002_0 record=CE06_BAD_RECORD\n\tat FailureSimulation$StatusMapper.map(FailureSimulation.java:124)\n\tat FailureSimulation$StatusMapper.map(FailureSimulation.java:75)\n\tat org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)\n\tat org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:800)\n\tat org.apache.hadoop.mapred.MapTask.run(MapTask.java:348)\n\tat org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:178)\n\tat java.base/java.security.AccessController.doPrivileged(Acce"
+   },
+   {
+    "id": "attempt_1793346852065_0002_m_000002_1",
+    "state": "KILLED",
+    "elapsed": 22349,
+    "diagnostics": "Task KILL is received. Killing attempt!"
+   }
+  ]
+ },
+ {
+  "task": "task_1793346852065_0002_m_000003",
+  "type": "MAP",
+  "taskState": "FAILED",
+  "attempts": []
+ },
+ {
+  "task": "task_1793346852065_0002_m_000004",
+  "type": "MAP",
+  "taskState": "FAILED",
+  "attempts": []
+ },
+ {
+  "task": "task_1793346852065_0002_m_000005",
+  "type": "MAP",
+  "taskState": "FAILED",
+  "attempts": []
+ },
+ {
+  "task": "task_1793346852065_0002_m_000006",
+  "type": "MAP",
+  "taskState": "FAILED",
+  "attempts": []
+ },
+ {
+  "task": "task_1793346852065_0002_m_000007",
+  "type": "MAP",
+  "taskState": "FAILED",
+  "attempts": []
+ },
+ {
+  "task": "task_1793346852065_0002_m_000008",
+  "type": "MAP",
+  "taskState": "FAILED",
+  "attempts": []
+ },
+ {
+  "task": "task_1793346852065_0002_m_000009",
+  "type": "MAP",
+  "taskState": "FAILED",
+  "attempts": []
+ },
+ {
+  "task": "task_1793346852065_0002_m_000010",
+  "type": "MAP",
+  "taskState": "FAILED",
+  "attempts": []
+ },
+ {
+  "task": "task_1793346852065_0002_m_000011",
+  "type": "MAP",
+  "taskState": "FAILED",
+  "attempts": []
+ },
+ {
+  "task": "task_1793346852065_0002_r_000000",
+  "type": "REDUCE",
+  "taskState": "FAILED",
+  "attempts": []
+ }
+]
